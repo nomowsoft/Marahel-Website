@@ -42,19 +42,19 @@ const Service = () => {
                             <Image src="/service/Group 8.png" alt="..." height={10} width={250} />
                         </div>
                     </div>
-                    <div className="md:w-1/1 lg:w-1/2 lg:pt-24 xl:pt-32">
+                    <div className="md:w-1/1 lg:w-1/2 lg:pt-24 xl:pt-20">
                         <div className="grid lg:grid-cols-2 gap-12">
                             {services.map((item, index) => (
                                 <div
                                     key={item.id}
-                                    className={`bg-white h-64 rounded-md shadow-2xl p-4 text-black ${index === 1 ? "lg:mt-16" : index === 2 ? "lg:-mt-16" : "mt-0"}`}
+                                    className={`bg-white h-72  rounded-md shadow-2xl p-4 text-black ${index === 1 ? "lg:mt-16" : index === 2 ? "lg:-mt-16" : "mt-0"}`}
                                 >
                                     <div className="flex justify-between">
                                         <div className="flex justify-center items-center mt-2">
                                             <Image src={item.image} alt="..." height={10} width={60} />
                                         </div>
                                     </div>
-                                    <div className="mt-4 font-extrabold lg:text-md xl:text-xl">
+                                    <div className="mt-4 font-extrabold xl:text-2xl">
                                         <h1>{item.id}. {item.title}</h1>
                                     </div>
                                     <div className="mt-4 font-extrabold text-justify line-clamp-3">

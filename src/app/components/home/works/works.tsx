@@ -13,7 +13,7 @@ import CustomerPartner from "../customer_partner/customer_partner";
 const Works = () => {
   return (
     <section className="bg-works bg-right bg-contain bg-no-repeat">
-        <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-24 pb-10">
+        <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-32 pb-10">
             <h1 className="text-center text-3xl lg:text-5xl text-primary font-semibold">أعمالنا</h1>
             <p className="mt-6 text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
             نقدم حلولًا تقنية متكاملة تشمل الاستشارات الرقمية، تطوير البرمجيات، تحسين البنية التحتية التقنية، وتوفير الموارد البشرية المتخصصة، لضمان نجاح مشاريع عملائنا وتحقيق أهدافهم.
