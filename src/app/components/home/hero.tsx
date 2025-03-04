@@ -10,7 +10,7 @@ const Hero = () => {
                 <div className="col-span-12 md:col-span-7 flex justify-center items-center">
                     <div className="">
                         <h1 className="text-primary text-3xl lg:text-5xl xl:text-7xl font-extrabold">مراحــــل الرقميــــــة</h1>
-                        <p className="text-xl lg:text-xl xl:text-3xl mt-10 font-normal text-justify">
+                        <p className="text-xl lg:text-xl xl:text-3xl mt-10 font-normal text-justify lg:ml-20">
                         شركة سعودية تقنية مقرها الرياض، وهي امتداد لخبرة مؤسسيها في مجال الاستشارات التقنية والتحول الرقمي.
                         </p>
                         <div className="mt-10">
@@ -53,7 +53,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="py-12">
-                <h1 className="text-center text-5xl text-primary font-extrabold">قيمنا</h1>
+                <h1 className="text-center text-3xl lg:text-5xl text-primary font-extrabold">قيمنا</h1>
                 <p className="text-gray-500 text-center text-xl mt-5">
                 نؤمن بأن نجاحنا يعتمد على التزامنا بمجموعة من القيم الأساسية التي تشكل جوهر عملنا وتوجه استراتيجياتنا:
                 </p>

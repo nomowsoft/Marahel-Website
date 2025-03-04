@@ -60,7 +60,7 @@ export default function Header() {
                   href="/contact_us"
                   className="mx-2 border border-primary bg-primary text-white py-2 px-8 rounded-md text-xl font-extrabold"
                 >
-                  ذهاب الي بوابة فنتاكس
+                  الذهاب الى بوابة فنتاكس
                 </Link>
               </div>
             </div>

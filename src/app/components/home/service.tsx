@@ -31,7 +31,7 @@ const Service = () => {
     return (
         <section className="bg-service bg-cover bg-no-repeat bg-center lg:h-screen w-full text-white">
             <div className="mx-2">
-                <h1 className="text-center text-4xl font-extrabold pt-20 xl:pt-32">خدماتنا</h1>
+                <h1 className="text-center text-3xl lg:text-5xl font-extrabold pt-20 xl:pt-32">خدماتنا</h1>
                 <div className="flex flex-wrap justify-center items-center">
                     <div className="md:w-1/1 lg:w-1/3 pt-10 md:pt-0">
                         <h1 className="text-4xl font-extrabold">نسعى دائمًـــا..</h1>
@@ -42,7 +42,7 @@ const Service = () => {
                             <Image src="/service/Group 8.png" alt="..." height={10} width={250} />
                         </div>
                     </div>
-                    <div className="md:w-1/1 lg:w-1/2 pt-16">
+                    <div className="md:w-1/1 lg:w-1/2 lg:pt-24 xl:pt-32">
                         <div className="grid lg:grid-cols-2 gap-12">
                             {services.map((item, index) => (
                                 <div
