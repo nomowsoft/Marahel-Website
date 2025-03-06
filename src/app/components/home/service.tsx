@@ -29,25 +29,25 @@ const services = [
 
 const Service = () => {
     return (
-        <section className="bg-service bg-cover bg-no-repeat bg-center lg:h-screen w-full text-white">
-            <div className="mx-2">
+        <section className="bg-primary lg:bg-transparent lg:bg-service bg-cover bg-no-repeat bg-center min-h-screen text-white">
+            <div className="mx-2 md:mx-10 lg:mx-20">
                 <h1 className="text-center text-3xl lg:text-5xl font-extrabold pt-20 xl:pt-32">خدماتنا</h1>
                 <div className="flex flex-wrap justify-center items-center">
-                    <div className="md:w-1/1 lg:w-1/3 pt-10 md:pt-0">
-                        <h1 className="text-4xl font-extrabold">نسعى دائمًـــا..</h1>
-                        <p className="mt-6 text-2xl text-justify md:ml-10">
+                    <div className="w-full lg:w-1/3 pt-10 md:pt-0">
+                        <h1 className="text-2xl lg:text-4xl  font-extrabold">نسعى دائمًـــا..</h1>
+                        <p className="mt-6 text-xl text-justify md:ml-10 pb-5 lg:pb-0">
                             بتسليط الضوء والتركيز بدقة على تقديم منتجات تقنية ورقمية تتسم بالإبداع والسلاسة مع توظيف فني وبديع للذكاء الاصطناعي (AI) مع المحافظة على مستوى عالٍ من الجودة لتقديم خدمات فريدة ومميزة لعملائنا.
                         </p>
                         <div className="pb-24 hidden lg:block">
                             <Image src="/service/Group 8.png" alt="..." height={10} width={250} />
                         </div>
                     </div>
-                    <div className="md:w-1/1 lg:w-1/2 lg:pt-24 xl:pt-20">
+                    <div className="w-full lg:w-2/3 lg:pt-24 xl:pt-32">
                         <div className="grid lg:grid-cols-2 gap-12">
                             {services.map((item, index) => (
                                 <div
                                     key={item.id}
-                                    className={`bg-white h-72  rounded-md shadow-2xl p-4 text-black ${index === 1 ? "lg:mt-16" : index === 2 ? "lg:-mt-16" : "mt-0"}`}
+                                    className={`bg-white h-72 rounded-md shadow-2xl p-4 text-black ${index === 1 ? "lg:mt-16" : index === 2 ? "lg:-mt-16" : "mt-0"}`}
                                 >
                                     <div className="flex justify-between">
                                         <div className="flex justify-center items-center mt-2">
@@ -67,8 +67,6 @@ const Service = () => {
                 </div>
             </div>
         </section>
-
-
     )
 }
 
