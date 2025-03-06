@@ -10,10 +10,10 @@ import { cutomerpartner } from "@/app/utils/data";
 
 const CustomerPartner = () => {
     return (
-        <section className="pb-12 pb-52">
+        <section className="pb-12 lg:pb-52">
             <div className="max-w-screen-2xl mx-auto">
-                <h1 className="text-center text-4xl text-primary font-semibold">شركاؤنـــا و عملاؤنـــا​​​​​​​​</h1>
-                <p className="mt-6 text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
+                <h1 className="text-center text-3xl lg:text-4xl text-primary font-semibold">شركاؤنـــا و عملاؤنـــا​​​​​​​​</h1>
+                <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
                     نفخر بخدمة مجموعة واسعة من العملاء في مختلف القطاعات، ملتزمين بتقديم حلول تقنية مخصصة تلبي احتياجاتهم وتساعدهم على تحقيق التميز في أعمالهم.
                 </p>
             </div>
@@ -42,7 +42,7 @@ const CustomerPartner = () => {
                             slidesPerView: 3,
                         },
                         "@1.50": {
-                            slidesPerView: 3,
+                            slidesPerView: 4,
                         },
                     }}
                 >
@@ -53,7 +53,7 @@ const CustomerPartner = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-                    <div className="custom-swiper-navigation flex justify-center">
+                    <div className="custom-swiper-navigation flex justify-center mt-4">
                         <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>&#8594;</div>
                         <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>&#8592;</div>
                     </div>

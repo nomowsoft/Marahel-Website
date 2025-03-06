@@ -15,7 +15,7 @@ const Works = () => {
     <section className="bg-works bg-right bg-contain bg-no-repeat">
         <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-32 pb-10">
             <h1 className="text-center text-3xl lg:text-5xl text-primary font-semibold">أعمالنا</h1>
-            <p className="mt-6 text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
+            <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
             نقدم حلولًا تقنية متكاملة تشمل الاستشارات الرقمية، تطوير البرمجيات، تحسين البنية التحتية التقنية، وتوفير الموارد البشرية المتخصصة، لضمان نجاح مشاريع عملائنا وتحقيق أهدافهم.
             </p>
             <div className="max-w-screen-2xl mx-auto flex flex-wrap gap-2 items-center mt-2 lg:mt-20" data-aos="fade-up">
@@ -40,7 +40,7 @@ const Works = () => {
                             slidesPerView: 2,
                         },
                         "@1.00": {
-                            slidesPerView: 4,
+                            slidesPerView: 3,
                         },
                         "@1.50": {
                             slidesPerView: 4,

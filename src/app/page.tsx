@@ -1,3 +1,4 @@
+import { ContacUs } from "./components/home/contact_us";
 import Hero from "./components/home/hero";
 import Service from "./components/home/service";
 import Works from "./components/home/works/works";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Service />
       <Works />
+      <ContacUs />
     </section>
   );
 }

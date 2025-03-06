@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const ContacUs = () => {
   return (
-    <section className="-mt-96 hidden lg:block">
+    <section className="lg:-mb-56 lg:relative">
       <div className="max-w-screen-lg mx-auto">
         <div className="bg-white shadow-2xl rounded-lg py-6 px-10">
           <h1 className="text-primary text-center text-4xl font-extrabold">تواصل معنا</h1>
-          <div className="flex justify-center gap-8">
-            <div className="py-10 lg:w-1/2">
+          <div className="grid lg:grid-cols-2 gap-4">
+            <div className="py-10">
               <div className="flex items-center py-5 px-6 shadow-xl rounded-xl">
                 <div className="flex justify-center items-center bg-primary p-2 rounded-md">
                   <Image src="/contact_us/location.png" alt="..." width={30} height={20} />
@@ -43,7 +43,7 @@ export const ContacUs = () => {
                 </div>
               </div>
             </div>
-            <div className="py-10 w-1/1 lg:w-1/2">
+            <div className="py-10">
               <form>
                 <div className="py-2">    
                   <input
