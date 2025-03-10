@@ -1,12 +1,16 @@
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 export const ContacUs = () => {
+  const t = useTranslations('ContactUs')
+  const locale = useLocale();
+  const isArabic = locale === 'ar';
   return (
     <section className="lg:-mb-56 lg:relative">
       <div className="max-w-screen-lg mx-auto">
         <div className="bg-white shadow-2xl rounded-lg py-6 px-10">
-          <h1 className="text-primary text-center text-4xl font-extrabold">تواصل معنا</h1>
+          <h1 className="text-primary text-center text-4xl font-extrabold">{t('title')}</h1>
           <div className="grid lg:grid-cols-2 gap-4">
             <div className="py-10">
               <div className="flex items-center py-5 px-6 shadow-xl rounded-xl">
@@ -14,7 +18,7 @@ export const ContacUs = () => {
                   <Image src="/contact_us/location.png" alt="..." width={30} height={20} />
                 </div>
                 <div className="mx-3">
-                  <h1 className="text-xl font-extrabold">الموقع</h1>
+                  <h1 className="text-xl font-extrabold">{t('location')}</h1>
                   <p>
                     8479 Al Mashaf, 3713  Ar Rabie Dist., Riyadh 13316 - KSA
                   </p>
@@ -25,7 +29,7 @@ export const ContacUs = () => {
                   <Image src="/contact_us/Email.png" alt="..." width={30} height={20} />
                 </div>
                 <div className="mx-3">
-                  <h1 className="text-xl font-extrabold">البريد الإلكتروني</h1>
+                  <h1 className="text-xl font-extrabold">{t('email')}</h1>
                   <p>
                     info@marahel.com.sa
                   </p>
@@ -36,7 +40,7 @@ export const ContacUs = () => {
                   <Image src="/contact_us/Phone.png" alt="..." width={30} height={20} />
                 </div>
                 <div className="mx-3">
-                  <h1 className="text-xl font-extrabold">رقم الهاتف</h1>
+                  <h1 className="text-xl font-extrabold">{t('phone')}</h1>
                   <p>
                     242 710 546 966+
                   </p>
@@ -52,7 +56,7 @@ export const ContacUs = () => {
                   placeholder:text-gray-500 text-gray-500 text-xl font-bold w-full h-10 
                   focus:outline-none focus:border-b-primary  focus:placeholder:text-primary focus:text-primary
                   hover:border-b-primary transition-all"
-                    placeholder="الاسم"
+                    placeholder={t('name')}
                   />
                 </div>
                 <div className="py-2">    
@@ -62,7 +66,7 @@ export const ContacUs = () => {
                   placeholder:text-gray-500 text-gray-500 text-xl font-bold w-full h-10 
                   focus:outline-none focus:border-b-primary  focus:placeholder:text-primary focus:text-primary
                   hover:border-b-primary transition-all"
-                    placeholder="البريد الإلكتروني"
+                    placeholder={t('email')}
                   />
                 </div>
                 <div className="py-2">    
@@ -72,7 +76,7 @@ export const ContacUs = () => {
                   placeholder:text-gray-500 text-gray-500 text-xl font-bold w-full h-10 
                   focus:outline-none focus:border-b-primary  focus:placeholder:text-primary focus:text-primary
                   hover:border-b-primary transition-all"
-                    placeholder="رقم الهاتف"
+                    placeholder={t('phone')}
                   />
                 </div>
                 <div className="py-2">    
@@ -82,7 +86,7 @@ export const ContacUs = () => {
                   placeholder:text-gray-500 text-gray-500 text-xl font-bold w-full h-10 
                   focus:outline-none focus:border-b-primary  focus:placeholder:text-primary focus:text-primary
                   hover:border-b-primary transition-all"
-                    placeholder="العنوان"
+                    placeholder={t('address')}
                   />
                 </div>
                 <div className="py-2">    
@@ -92,7 +96,7 @@ export const ContacUs = () => {
                   placeholder:text-gray-500 text-gray-500 text-xl font-bold w-full h-10 
                   focus:outline-none focus:border-b-primary  focus:placeholder:text-primary focus:text-primary
                   hover:border-b-primary transition-all"
-                    placeholder="الرسالة"
+                    placeholder={t('message')}
                   />
                 </div>
                 <div className="flex justify-center mt-10">
@@ -101,12 +105,10 @@ export const ContacUs = () => {
                       className="mx-2 bg-primary border border-primary py-2 px-2 w-32 rounded-md flex justify-center items-center"
                       >
                       <span className="mx-2 text-lg text-white">
-                          أرسال 
+                          {t('send')}
                       </span> 
                       <div className="flex justify-center items-center">
-                          <Image
-                          height={0} width={20}  src="/hero/Paper.png"
-                          alt="phone" />
+                         <Image height={20} width={20} src={`${ isArabic ? "/hero/Paper.png" : "/hero/Vector.png"}`} alt="phone" />
                       </div> 
                   </Link>
                 </div>

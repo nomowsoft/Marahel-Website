@@ -6,15 +6,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import { cutomerpartner } from "@/app/utils/data";
+import { cutomerpartner } from "@/utils/data";
+import { useLocale, useTranslations } from "next-intl";
 
 const CustomerPartner = () => {
+    const t = useTranslations("CustomerPartner");
+    const locale = useLocale();
+    const isArabic = locale === 'ar';
     return (
         <section className="pb-12 lg:pb-52">
             <div className="max-w-screen-2xl mx-auto">
-                <h1 className="text-center text-3xl lg:text-4xl text-primary font-semibold">شركاؤنـــا و عملاؤنـــا​​​​​​​​</h1>
+                <h1 className="text-center text-3xl lg:text-4xl text-primary font-semibold">{t('title')}​</h1>
                 <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
-                    نفخر بخدمة مجموعة واسعة من العملاء في مختلف القطاعات، ملتزمين بتقديم حلول تقنية مخصصة تلبي احتياجاتهم وتساعدهم على تحقيق التميز في أعمالهم.
+                    {t('description')}
                 </p>
             </div>
             <div className="max-w-screen-2xl mx-auto flex flex-wrap gap-2 items-center mt-2 lg:mt-16" data-aos="fade-up">
@@ -54,8 +58,8 @@ const CustomerPartner = () => {
                         </SwiperSlide>
                     ))}
                     <div className="custom-swiper-navigation flex justify-center mt-4">
-                        <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>&#8594;</div>
-                        <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>&#8592;</div>
+                        <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</div>
+                        <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</div>
                     </div>
                 </Swiper>
             </div>
