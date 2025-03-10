@@ -6,17 +6,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import { works } from "@/app/utils/data";
+import { getWorks } from "@/utils/data";
 import module from "./work.module.css";
 import CustomerPartner from "../customer_partner/customer_partner";
+import { useLocale, useTranslations } from "next-intl";
 
 const Works = () => {
+    const t = useTranslations("Works");
+    const works = getWorks(t);
+    const locale = useLocale();
+    const isArabic = locale === 'ar';
   return (
     <section className="bg-works bg-right bg-contain bg-no-repeat">
         <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-32 pb-10">
-            <h1 className="text-center text-3xl lg:text-5xl text-primary font-semibold">أعمالنا</h1>
+            <h1 className="text-center text-3xl lg:text-5xl text-primary font-semibold">{t('title')}</h1>
             <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
-            نقدم حلولًا تقنية متكاملة تشمل الاستشارات الرقمية، تطوير البرمجيات، تحسين البنية التحتية التقنية، وتوفير الموارد البشرية المتخصصة، لضمان نجاح مشاريع عملائنا وتحقيق أهدافهم.
+                {t('description')}
             </p>
             <div className="max-w-screen-2xl mx-auto flex flex-wrap gap-2 items-center mt-2 lg:mt-20" data-aos="fade-up">
                 <Swiper
@@ -54,7 +59,7 @@ const Works = () => {
                                     <Image src="/works/unsplash_phIFdC6lA4E.png" alt="" width={500} height={20} />
                                 </div>
                                 <div className="mt-3 mb-3 flex justify-between items-center">
-                                    <p className="mt-1 text-lg text-gray-600">
+                                    <p className="mt-1 text-lg text-gray-600 text-justify">
                                         {work.description}
                                     </p>
                                     <div className="flex justify-center items-center p-2 mt-12">
@@ -65,8 +70,8 @@ const Works = () => {
                         </SwiperSlide>
                     ))}
                     <div className="custom-swiper-navigation flex mt-3 justify-center">
-                        <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>&#8594;</div>
-                        <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>&#8592;</div>
+                        <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</div>
+                        <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</div>
                     </div>
                 </Swiper>
             </div>

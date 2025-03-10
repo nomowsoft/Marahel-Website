@@ -1,0 +1,76 @@
+{ 
+    "Hero": {
+      "title": "Digital Marahel",
+      "description": "A Saudi technology company based in Riyadh, an extension of its founders’ experience in the field of technology consulting and digital transformation.",
+      "title_button": "Learn more details"
+    },
+    "Agreements": {
+      "title": "Agreements",
+      "title1": "Chatbot Implementation Agreement (Murshid)",
+      "description": "For 50 Associations",
+      "description1": "The initiative to support and sponsor Noura Al-Mallahi Endowments",
+      "more": "More"
+    },
+    "OurValues": {
+      "title": "Our Values",
+      "title1": "Safety",
+      "title2": "Creativity",
+      "title3": "Commitment",
+      "title4": "Excellence",
+      "description": "We believe that our success depends on our commitment to a set of core values ​​that form the core of our business and guide our strategies:",
+      "description1": "We are keen to apply the highest security standards to protect data and systems, through advanced technologies and preventive measures to ensure a safe and risk-free digital environment.",
+      "description2": "We believe that innovation is the key to success, so we work to provide innovative technical solutions that meet customer needs in creative ways that increase business efficiency and enhance its competitiveness.",
+      "description3": "We place quality and responsibility at the forefront of our priorities, committed to providing services with a high level of professionalism, fulfilling promises, and achieving customer satisfaction.",
+      "description4": "We work to provide exceptional solutions that exceed expectations, by adopting best practices, investing in modern technologies, and building long-term relationships with our customers."
+    },
+    "OurService": {
+      "title": "Our Service",
+      "title0": "We always strive..",
+      "title1": "Evaluation",
+      "title2": "Digital Transformation Consulting",
+      "title3": "Technical Development and Technical Services",
+      "title4": "Technical human resources provision service (remote - at the client's premises)",
+      "description0": "By highlighting and focusing precisely on providing technical and digital products that are characterized by creativity and smoothness with the technical and innovative use of artificial intelligence (AI) while maintaining a high level of quality to provide unique and distinctive services to our clients.",
+      "description": "We provide evaluation services to identify strengths and weaknesses in technical systems, with detailed reports and recommendations for improvement according to best practices.",
+      "description1": "We help organizations adopt modern technologies to improve performance and increase efficiency, by developing customized digital strategies that suit their needs.",
+      "description2": "We provide integrated technical solutions that include software development, improving digital infrastructure, and providing technical support to ensure smooth and secure operation.",
+      "description3": "We provide qualified technical professionals to support your projects, whether remotely or at your workplace, to ensure that tasks are carried out efficiently and at an appropriate cost.",
+      "description4": "We work to provide exceptional solutions that exceed expectations, by adopting best practices, investing in modern technologies, and building long-term relationships with our customers."
+    },
+    "Works": {
+      "title": "Our Works",
+      "title1": "Dedicated messaging management platform for WhatsApp messages.",
+      "title2": "Fintax is an approved intermediary system for linking with the Zakat and Tax Authority for the second phase",
+      "title3": "Real Estate Management System.",
+      "title4": "A dedicated messaging management platform for WhatsApp messages.",
+      "title5": "Smart Chat Bot.",
+      "title6": "Fentax is an approved intermediary system to connect with the Zakat and Tax Authority for the second phase",
+      "title7": "Real Estate Management System.",
+      "description": "We provide integrated technical solutions that include digital consulting, software development, technical infrastructure improvement, and the provision of specialized human resources, to ensure the success of our clients’ projects and the achievement of their goals."
+    },
+    "CustomerPartner": {
+      "title": "Our Customer & Partner",
+      "description": "We pride ourselves on serving a wide range of clients across various sectors, committed to providing customized technology solutions that meet their needs and help them achieve business excellence."
+    },
+    "ContactUs": {
+      "title": "Contact Us",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "message": "Message",
+      "location": "Location",
+      "send": "Send"
+    },
+    "Footer": {
+      "description": "By focusing and precisely focusing on providing creative and seamless technical and digital products with artistic and innovative use of artificial intelligence (AI) while maintaining a high level of quality to provide unique and distinctive services to our customers.",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "contactus": "Contact Us",
+      "links": "Links",
+      "home": "Home",
+      "copyright": "2025 © Copyright Marahel Digital Company"
+    }
+  }
+  
