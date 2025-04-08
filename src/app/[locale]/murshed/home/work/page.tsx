@@ -13,7 +13,7 @@ const Work = () => {
                             <Image src="/murshed/content.png" alt="..." width={700} height={20} />
                         </div>
                     </div>
-                    <div className="lg:col-span-7 col-span-12 max-w-screen-2xl lg:mx-auto mx-10">
+                    <div className="lg:col-span-7 col-span-12 max-w-screen-2xl xl:mx-auto mx-10">
                         <div className="">
                             <h1 className="text-center text-primary text-2xl md:text-3xl xl:text-4xl font-extrabold">
                                 {t('title')}
