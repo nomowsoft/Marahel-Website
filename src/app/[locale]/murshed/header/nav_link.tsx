@@ -3,7 +3,6 @@ import Navitem from "./nav_item";
 
 const menuItems = [
     { name: "الرئسية", nameen:"Home", href: "/", isActive: true },
-    { name: "مرشد", nameen:"Murshed", href: "/murshed", isActive: false },
 ];
 const Navlink = () => {
     const locale = useLocale();

@@ -1,4 +1,4 @@
-import { Values, Works, CustmerPartner, Service } from "./types";
+import { Values, Works, CustmerPartner, Service, Features, WhyMurshed } from "./types";
 
 export const getValues = (t: (key: string) => string): Values[] => [
     {
@@ -127,5 +127,71 @@ export const cutomerpartner: CustmerPartner[] = [
     {
         id: 8,
         image: "/customer_partner/Group 844.png",
+    },
+]
+// data for murshed
+
+export const getFeatures = (t: (key: string) => string): Features[] =>  [
+    {
+        id: 1,
+        image: "/murshed/f1.png",
+        title: t('title1'),
+        description: t('description'),
+    },
+    {
+        id: 2,
+        image: "/murshed/f2.png",
+        title: t('title2'),
+        description: t('description1'),
+    },
+    {
+        id: 3,
+        image: "/murshed/f3.png",
+        title: t('title3'),
+        description: t('description2'),
+    },
+    {
+        id: 4,
+        image: "/murshed/f4.png",
+        title: t('title4'),
+        description: t('description3'),
+    },
+]
+export const getWhyMurshed = (t: (key: string) => string): WhyMurshed[] =>  [
+    {
+        id: 1,
+        image: "/murshed/01.png",
+        title: t('title1'),
+        description: t('description1'),
+    },
+    {
+        id: 2,
+        image: "/murshed/02.png",
+        title: t('title2'),
+        description: t('description2'),
+    },
+    {
+        id: 3,
+        image: "/murshed/03.png",
+        title: t('title3'),
+        description: t('description3'),
+    },
+    {
+        id: 4,
+        image: "/murshed/04.png",
+        title: t('title4'),
+        description: t('description4'),
+    },
+    {
+        id: 5,
+        image: "/murshed/05.png",
+        title: t('title5'),
+        description: t('description5'),
+    },
+    {
+        id: 6,
+        image: "/murshed/06.png",
+        title: t('title6'),
+        description: t('description6'),
     },
 ]

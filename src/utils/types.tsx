@@ -20,3 +20,17 @@ export type CustmerPartner = {
     id:number;
     image:string;
 }
+
+// type data murshed
+export type Features = {
+    id:number;
+    image:string;
+    title:string;
+    description:string;
+}
+export type WhyMurshed = {
+    id:number;
+    image:string;
+    title:string;
+    description:string;
+}

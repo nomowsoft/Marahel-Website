@@ -71,6 +71,48 @@
       "links": "Links",
       "home": "Home",
       "copyright": "2025 © Copyright Marahel Digital Company"
+    },
+    "FeaturesMurshed": {
+      "title": "Morshed's Competitive Advantages...!",
+      "title0": "Morshed outperforms other systems thanks to:",
+      "title1": "Full local hosting",
+      "title2": "High customization and rapid response",
+      "title3": "Advanced artificial intelligence technology",
+      "title4": "Seamless integration",
+      "description": "Enjoy the highest levels of privacy and security with local servers that guarantee unparalleled speed and responsiveness.",
+      "description1": "Morshed is customizable to suit your business needs and customer preferences, and reduces customer wait times with instant response technology.",
+      "description2": "Morshed accurately understands local dialects, Modern Standard Arabic, and English, enabling it to provide understandable and appropriate responses.",
+      "description3": "Morshed integrates effectively with CRM and ERP systems to provide a comprehensive user experience."
+    },
+    "WorkMurshed": {
+      "title": "How does Murshid work?",
+      "title0": "Start with us!",
+      "title1": "Contact us",
+      "description": "Murshid is easy to use and can be quickly integrated across various digital channels such as WhatsApp and websites. Simply set up Murshid, and it will immediately start analyzing inquiries and providing appropriate responses efficiently.",
+      "description1": "Are you ready to improve your customer interactions and enhance their satisfaction? Contact us to start using Murshid and transform your customer service experience. For more information or to arrange a demo, please visit our contact page.",
+      "description2": "Get a free consultation!",
+      "textbutton": "Contact us now"
+    },
+    "WhyMurshed": {
+      "title": "Why Murshid?",
+      "title1": "Data Security",
+      "title2": "Leading Technology",
+      "title3": "Continuous Support",
+      "title4": "Compatibility and Ease of Use",
+      "title5": "Scalability and Growth",
+      "title6": "Fully Customizable",
+      "description1": "We ensure your data is kept safe and secure thanks to our local hosting.",
+      "description2": "Using artificial intelligence to provide fast and accurate responses.",
+      "description3": "24/7 customer service to enhance the customer experience.",
+      "description4": "Seamlessly integrates with your digital platforms, allowing you to unify and optimize your digital interactions effectively.",
+      "description5": "Designed to easily accommodate increased interactions and customers, making it ideal for growing organizations.",
+      "description6": "Easily adjust and customize your chatbot to fit your needs and workflow."
+    },
+    "HeroMurshed": {
+      "title": "Welcome to the world of Murshid,",
+      "title1": "where technology meets security!",
+      "description1": "Discover Murshid, the leading intelligent chatbot in Saudi Arabia, designed to securely enhance your digital communication. Murshid uses Retrieval Augmented Generation (RAG) technology to deliver accurate and secure responses, enhanced with local security for unparalleled customer service.",
+      "description2": "With Murshid, you can rely on advanced technology and local security to provide exceptional customer service."
     }
   }
   

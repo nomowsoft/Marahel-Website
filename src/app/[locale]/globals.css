@@ -8,6 +8,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Somar';
+  src: url('/fonts/alfont_com_SomarGX.ttf') format('woff2');
+  font-style: normal;
+}
+
 main{
   min-height: calc(100vh - 457px);
 }

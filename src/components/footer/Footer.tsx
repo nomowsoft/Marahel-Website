@@ -1,13 +1,19 @@
+"use client";
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
     const t = useTranslations('Footer');
     const locale = useLocale();
     const isArabic = locale === 'ar';
+    const pathname = usePathname();
+    const new_path = `${pathname}`
+    console.log(new_path);
+
     return (
-        <section>
+        <section className={`${ new_path === `/${locale}/murshed` ? 'hidden' : ''}`}>
             <footer className="bg-primary lg:bg-transparent lg:bg-footer bg-cover lg:bg-cover bg-no-repeat lg:h-screen bg-center w-full py-8 lg:pt-56 px-5 lg:px-20">
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-12 xl:mt-20">
