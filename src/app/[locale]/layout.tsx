@@ -20,13 +20,13 @@ export default async function RootLayout({ children, params }: { children: React
         <link rel="icon" href="/header/logo_marahel.png" />
       </head>
       <body style={{ fontFamily: 'CustomFontName, sans-serif' }}>
-        <Header />
         <main>
           <NextIntlClientProvider messages={messages}>
+            <Header />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </main>
-        <Footer />
       </body>
     </html>
   );

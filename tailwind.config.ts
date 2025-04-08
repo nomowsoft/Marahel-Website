@@ -11,7 +11,7 @@ export default {
       colors: {
         primary: "#463192",
         secondary: "#F6EBFF",
-        info: "#F288B7",
+        info: "#D2CDFF",
         success: "#F5FCFC",
         warning: "#F9FAFB",
       },
@@ -21,6 +21,9 @@ export default {
       service: "url('/service/New Project (7).svg')",
       works: "url('/works/Ellipse 5.png')",
       footer: "url('/footer/Rectangle 237.svg')",
+      murshed_hero: "url('/murshed/bg-hero.png')",
+      why_murshed: "url('/murshed/bg_why_murshed.png')",
+      why_murshed2: "url('/murshed/bg_why_murshed2.png')",
     },
   },
   plugins: [],
