@@ -15,7 +15,7 @@ const WhyMurshed = () => {
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-8 max-w-screen-2xl lg:mx-auto md:mx-20">
                     {whymurshed.map((item, index) => (
-                        <div key={index} className="shadow-xl bg-white p-6 rounded-lg">
+                        <div key={index} className="shadow-xl bg-white p-6 rounded-lg md:h-72 lg:h-60">
                             <div className="flex justify-center">
                                 <Image src={item.image} alt="..." width={100} height={20} />
                             </div>
