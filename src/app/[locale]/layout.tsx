@@ -1,12 +1,14 @@
 import "./globals.css";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import { NextIntlClientProvider } from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import Image from "next/image";
 
 type Locale = 'en' | 'ar';
 
-export default async function RootLayout({ params }: { params: Promise<{ locale: string }>; }) {
+export default async function RootLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }>; }) {
   const { locale } = await params;
   const messages = await getMessages();
   if (!routing.locales.includes(locale as Locale) || !messages) {
@@ -19,9 +21,11 @@ export default async function RootLayout({ params }: { params: Promise<{ locale:
       </head>
       <body style={{ fontFamily: 'CustomFontName, sans-serif' }}>
         <main>
-          <div className="flex justify-center">
-            <Image src="/hero/soon.png" alt="..." width={2000} height={20} className="" />
-          </div>
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
         </main>
       </body>
     </html>
