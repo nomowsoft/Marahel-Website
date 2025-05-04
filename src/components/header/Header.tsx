@@ -25,12 +25,11 @@ export default function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isArabic = locale === 'ar';
   const pathname = usePathname();
   const new_path = `${pathname}`
   return (
     <header className={`${ new_path === `/${locale}/murshed` ? 'hidden' : ''}`}>
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 fixed w-full">
+      <nav className="bg-white border-gray-200 px-4 lg:px-6 relative w-full">
         <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 py-4 relative">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center">
@@ -51,7 +50,7 @@ export default function Header() {
               href="#"
               className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
             >
-              <span className="mx-2 text-xl text-primary font-extrabold">
+              <span className="mx-2 text-xl text-primary font-extrabold" dir="rtl">
                 242 710 546 996+
               </span>
               <div className="flex justify-center items-center">
@@ -60,12 +59,6 @@ export default function Header() {
                   alt="phone"
                 />
               </div>
-            </Link>
-            <Link
-              href="#"
-              className="mx-2 border border-primary bg-primary text-white py-3 px-8 rounded-md text-xl font-extrabold"
-            >
-              {isArabic ? "الذهاب الى بوابة فنتاكس" : "Go FinTax Website"}
             </Link>
           </div>
 
@@ -115,14 +108,6 @@ export default function Header() {
             id="mobile-menu"
           >
             <Navlink />
-            <div className="mt-4">
-              <Link
-                href="#"
-                className="text-white bg-primary hover:bg-primary hover:text-success hover:border hover:border-success focus:ring-4 focus:ring-primary-300 text-xl rounded-lg px-2 md:px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-2"
-              >
-                {isArabic ? "الذهاب الى بوابة فنتاكس" : "Go FinTax Website"}
-              </Link>
-            </div>
             <div className="mt-8">
               <Link
                 href="#"

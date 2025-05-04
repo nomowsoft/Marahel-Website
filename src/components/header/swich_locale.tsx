@@ -23,7 +23,6 @@ export default function LocaleSwitcher() {
           onChange={(e) => changeLocale(e.target.value)}
           className="text-primary bg-transparent focus:border focus:border-white"
         >
-          <option value="en">English</option>
           <option value="ar">عربي</option>
         </select>
         <Image src="/header/Frame 194 (4).png" alt="" width={40} height={10} />

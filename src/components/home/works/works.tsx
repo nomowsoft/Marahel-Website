@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { getWorks } from "@/utils/data";
-import module from "./work.module.css";
 import CustomerPartner from "../customer_partner/customer_partner";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -17,9 +16,9 @@ const Works = () => {
     const locale = useLocale();
     const isArabic = locale === 'ar';
   return (
-    <section className="bg-works bg-right bg-contain bg-no-repeat">
+    <section className="bg-works bg-right bg-contain bg-no-repeat" id="works">
         <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-32 pb-10">
-            <h1 className="text-center text-3xl lg:text-5xl text-primary font-semibold">{t('title')}</h1>
+            <h1 className="text-center text-3xl lg:text-7xl text-primary font-semibold">{t('title')}</h1>
             <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
                 {t('description')}
             </p>
@@ -54,17 +53,14 @@ const Works = () => {
                 >
                     {works?.map((work) => (
                         <SwiperSlide key={work.id} className="bg-white p-5 rounded-md shadow-lg border border-success">
-                            <div>
-                                <div className="flex justify-center">
-                                    <Image src="/works/unsplash_phIFdC6lA4E.png" alt="" width={500} height={20} />
+                            <div className="h-64">
+                                <div className="flex justify-center h-32 w-full">
+                                    <Image src={work.image} alt="" width={150} height={20} />
                                 </div>
-                                <div className="mt-3 mb-3 flex justify-between items-center">
-                                    <p className="mt-1 text-lg text-gray-600 text-justify">
+                                <div className="mt-12 mb-3">
+                                    <p className="mt-1 text-xl text-gray-600 text-center">
                                         {work.description}
                                     </p>
-                                    <div className="flex justify-center items-center p-2 mt-12">
-                                        <Image src={work.image} alt="" height={10} width={70} className={`${module.image_custom}`} />
-                                    </div>
                                 </div>
                             </div>
                         </SwiperSlide>

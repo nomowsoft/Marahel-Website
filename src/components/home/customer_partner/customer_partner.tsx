@@ -53,7 +53,7 @@ const CustomerPartner = () => {
                     {cutomerpartner?.map((cp) => (
                         <SwiperSlide key={cp.id}>
                             <div className="flex justify-center">
-                                <Image src={cp.image} alt="" width={500} height={20} />
+                                <Image src={cp.image} alt=""  width={300} height={20} />
                             </div>
                         </SwiperSlide>
                     ))}

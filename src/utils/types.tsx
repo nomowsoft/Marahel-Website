@@ -16,6 +16,13 @@ export type Works = {
     description:string;
     image:string;
 }
+
+export type Agreements = {
+    id:number;
+    title:string;
+    description:string;
+    description1:string;
+}
 export type CustmerPartner = {
     id:number;
     image:string;
