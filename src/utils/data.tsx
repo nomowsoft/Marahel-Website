@@ -1,4 +1,4 @@
-import { Values, Works, CustmerPartner, Service, Features, WhyMurshed } from "./types";
+import { Values, Works, CustmerPartner, Service, Features, WhyMurshed, Agreements } from "./types";
 
 export const getValues = (t: (key: string) => string): Values[] => [
     {
@@ -62,71 +62,86 @@ export const getWorks = (t: (key: string) => string): Works[] => [
     {
         id: 1,
         description: t('title1'),
-        image: "/works/w1.png",
+        image: "/works/what.png",
     },
     {
         id: 2,
         description: t('title2'),
-        image: "/works/w2.png",
+        image: "/works/fintax.png",
     },
     {
         id: 3,
         description: t('title3'),
-        image: "/works/w4.png",
+        image: "/works/reeal_estate.png",
     },
     {
         id: 4,
         description: t('title4'),
-        image: "/works/w3.png",
+        image: "/works/what.png",
     },
     {
         id: 5,
         description: t('title5'),
-        image: "/works/w1.png",
+        image: "/works/murshed.png",
     },
     {
         id: 6,
         description: t('title6'),
-        image: "/works/w2.png",
+        image: "/works/fintax.png",
     },
     {
         id: 7,
         description: t('title7'),
-        image: "/works/w4.png",
+        image: "/works/reeal_estate.png",
+    },
+]
+
+export const getAgreements = (t: (key: string) => string): Agreements[] => [
+    {
+        id: 1,
+        title: t('title1'),
+        description: t('description1'),
+        description1: t('description11')
+    },
+    {
+        id: 2,
+        title: t('title2'),
+        description: t('description2'),
+        description1: t('description22')
     },
 ]
 export const cutomerpartner: CustmerPartner[] = [
     {
         id: 1,
-        image: "/customer_partner/Group 843.png",
+        image: "/customer_partner/Deef2 1.png",
     },
     {
         id: 2,
-        image: "/customer_partner/Group 844.png",
+        image: "/customer_partner/RSSD2 1.png",
     },
     {
         id: 3,
-        image: "/customer_partner/Group 843.png",
+        image: "/customer_partner/The National Company for Sulfur Products 1.png",
     },
     {
         id: 4,
-        image: "/customer_partner/Group 844.png",
+        image: "/customer_partner/Deef2 1.png",
     },
     {
         id: 5,
-        image: "/customer_partner/Group 843.png",
+        image: "/customer_partner/RSSD2 1.png",
     },
     {
         id: 6,
-        image: "/customer_partner/Group 844.png",
+        image: "/customer_partner/The National Company for Sulfur Products 1.png",
     },
     {
         id: 7,
-        image: "/customer_partner/Group 843.png",
+        image: "/customer_partner/Deef2 1.png",
     },
     {
         id: 8,
-        image: "/customer_partner/Group 844.png",
+        image: "/customer_partner/RSSD2 1.png",
     },
 ]
 // data for murshed
