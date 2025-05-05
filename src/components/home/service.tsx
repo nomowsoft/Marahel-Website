@@ -9,7 +9,7 @@ const Service = () => {
     const locale = useLocale();
     const isArabic = locale === 'ar';
     return (
-        <section className="bg-primary lg:bg-transparent lg:bg-service bg-contain bg-no-repeat bg-center min-h-screen text-white">
+        <section className="bg-primary lg:bg-transparent lg:bg-service bg-contain bg-no-repeat bg-center min-h-screen text-white" id="services">
             <div className="mx-2 md:mx-10 lg:mx-20">
                 <h1 className="text-center text-3xl lg:text-7xl font-extrabold pt-20 xl:pt-72">{t('title')}</h1>
                 <div className="flex flex-wrap justify-center">

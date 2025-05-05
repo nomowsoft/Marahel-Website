@@ -1,6 +1,5 @@
 "use client";
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
 import { getAgreements } from "@/utils/data";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
@@ -45,15 +44,12 @@ const Agreements = () => {
                                     <p className="mt-5 text-lg lg:text-2xl font-semibold">
                                         {agreement.description1}
                                     </p>
-                                    <div className="flex justify-center items-center mt-8">
-                                        <Link href="#" className="py-2 px-4 border border-primary text-2xl rounded-md font-bold text-primary">{t('more')}</Link>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </SwiperSlide>
                 ))}
-                <div className="custom-swiper-navigation flex mt-3 justify-center">
+                <div className="custom-swiper-navigation flex mt-3 justify-between">
                     <button className={`custom-swiper-button-prev1 py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</button>
                     <button className={`custom-swiper-button-next1 py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</button>
                 </div>
