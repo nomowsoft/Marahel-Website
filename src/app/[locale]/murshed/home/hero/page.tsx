@@ -1,8 +1,46 @@
-import Image from "next/image";
+"use client";
+import Image from 'next/image';
 import { useTranslations } from "next-intl";
+import { useEffect } from 'react';
+
+// تعريف chatwootSDK في واجهة Window
+declare global {
+    interface Window {
+        chatwootSDK: {
+            run: (config: {
+                websiteToken: string;
+                baseUrl: string;
+                containerId: string;
+                type: string;
+                launcherTitle?: string;
+            }) => void;
+        };
+    }
+}
 
 const Hero = () => {
     const t = useTranslations("HeroMurshed");
+    useEffect(() => {
+        // Load Chatwoot SDK
+        (function (d, t) {
+            const BASE_URL = "https://murshed.marahel.innovalcon.com";
+            const g = d.createElement(t) as HTMLScriptElement;
+            const s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode?.insertBefore(g, s);
+            g.onload = function () {
+                window.chatwootSDK.run({
+                    websiteToken: 'YXMg7m1bPppGcYfipZKeqkLN',
+                    baseUrl: BASE_URL,
+                    containerId: 'chat-container',
+                    type: 'expanded_bubble',
+                    launcherTitle: 'ChatGPT Assistant',
+                });
+            };
+        })(document, "script");
+    }, []);
     return (
         <section className="bg-murshed_hero bg-contain bg-no-repeat bg-right lg:p-10">
             <div className="bg-white rounded-3xl shadow-lg p-8 lg:p-16">
@@ -24,7 +62,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="lg:col-span-5 col-span-12 flex justify-center lg:justify-end mt-10 lg:mt-0">
-                        <Image src="/murshed/hero_image.png" alt="..." width={700} height={20} />
+                        <Image src="/murshed/murshed.svg" alt="..." width={700} height={20} />
                     </div>
                 </div>
             </div>
