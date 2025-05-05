@@ -20,3 +20,7 @@ main{
 .swiper-wrapper{
   align-items: center !important;
 }
+.woot-widget-holder.woot-elements--right {
+  width: 97% !important;
+  right: 20px !important;
+}
