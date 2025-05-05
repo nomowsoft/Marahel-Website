@@ -17,7 +17,7 @@ const Hero = () => {
                         {t('description')}
                         </p>
                         <div className="mt-10">
-                            <a href="#works" className="mx-2 bg-primary border border-primary py-3 px-4 rounded-md flex justify-center items-center md:w-1/2">
+                            <a href="#services" className="mx-2 bg-primary border border-primary py-3 px-4 rounded-md flex justify-center items-center md:w-1/2">
                                 <span className="mx-2 text-xl lg:text-2xl font-extrabold text-white">
                                 {t('title_button')}
                                 </span>
