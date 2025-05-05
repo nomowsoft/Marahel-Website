@@ -7,7 +7,7 @@ import Work from './home/work/page'
 const murshed = () => {
   return (
     <section>
-      <Hero />
+      <Hero /> 
       <WhyMurshed />
       <Features />
       <Work />

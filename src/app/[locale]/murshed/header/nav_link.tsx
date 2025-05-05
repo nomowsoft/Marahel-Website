@@ -2,7 +2,7 @@ import { useLocale } from "next-intl";
 import Navitem from "./nav_item";
 
 const menuItems = [
-    { name: "الرئسية", nameen:"Home", href: "/", isActive: true },
+    { name: "الرئسية", nameen:"Home", href: "#", isActive: true },
 ];
 const Navlink = () => {
     const locale = useLocale();
