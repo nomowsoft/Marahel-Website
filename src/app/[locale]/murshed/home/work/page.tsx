@@ -10,7 +10,7 @@ const Work = () => {
                 <div className="grid grid-cols-12 max-w-screen-2xl mx-auto ">
                     <div className="lg:col-span-5 col-span-12 max-w-screen-lg">
                         <div className="flex justify-center lg:justify-start items-center">
-                            <Image src="/murshed/content.png" alt="..." width={700} height={20} />
+                            <Image src="/murshed/content.svg" alt="..." width={700} height={20} />
                         </div>
                     </div>
                     <div className="lg:col-span-7 col-span-12 max-w-screen-2xl xl:mx-auto mx-10">

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useTranslations } from "next-intl";
 import { useEffect } from 'react';
 
-// تعريف chatwootSDK في واجهة Window
 declare global {
     interface Window {
         chatwootSDK: {
@@ -21,7 +20,6 @@ declare global {
 const Hero = () => {
     const t = useTranslations("HeroMurshed");
     useEffect(() => {
-        // Load Chatwoot SDK
         (function (d, t) {
             const BASE_URL = "https://murshed.marahel.innovalcon.com";
             const g = d.createElement(t) as HTMLScriptElement;
