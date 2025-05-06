@@ -33,7 +33,7 @@ const Features = () => {
                     </div>
                     <div className="lg:col-span-5 col-span-12">
                         <div className="flex justify-center lg:justify-end items-center">
-                            <Image src="/murshed/features1.png" alt="..." width={700} height={20} />
+                            <Image src="/murshed/Image.svg" alt="..." width={700} height={20} />
                         </div>
                     </div>
                 </div>
