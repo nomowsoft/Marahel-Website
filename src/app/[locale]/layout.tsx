@@ -7,6 +7,11 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Link from "next/link";
 import Image from "next/image";
+<<<<<<< Updated upstream
+=======
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+>>>>>>> Stashed changes
 
 type Locale = 'en' | 'ar';
 

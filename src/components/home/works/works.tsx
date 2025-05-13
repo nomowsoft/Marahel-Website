@@ -12,8 +12,8 @@ import { useLocale, useTranslations } from "next-intl";
 
 const Works = () => {
     const t = useTranslations("Works");
-    const works = getWorks(t);
     const locale = useLocale();
+    const works = getWorks(t, locale);
     const isArabic = locale === 'ar';
   return (
     <section className="bg-works bg-right bg-contain bg-no-repeat" id="works">
@@ -53,21 +53,23 @@ const Works = () => {
                 >
                     {works?.map((work) => (
                         <SwiperSlide key={work.id} className="bg-white p-5 rounded-md shadow-lg border border-success">
-                            <div className="h-64">
-                                <div className="flex justify-center h-32 w-full">
-                                    <Image src={work.image} alt="" width={150} height={20} />
+                            <a href={work.href}>
+                                <div className="h-64">
+                                    <div className="h-32 flex justify-center items-center">
+                                        <Image src={work.image} alt="" width={100} height={20} />
+                                    </div>
+                                    <div className="mt-12 mb-3">
+                                        <p className="mt-1 text-lg text-gray-600 text-center">
+                                            {work.description}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className="mt-12 mb-3">
-                                    <p className="mt-1 text-xl text-gray-600 text-center">
-                                        {work.description}
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </SwiperSlide>
                     ))}
                     <div className="custom-swiper-navigation flex mt-3 justify-center">
-                        <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</div>
-                        <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</div>
+                        <button className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</button>
+                        <button className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</button>
                     </div>
                 </Swiper>
             </div>

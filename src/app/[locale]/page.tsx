@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 import { ContacUs } from "../../components/home/contact_us";
 import Hero from "../../components/home/hero/hero";
 import Service from "../../components/home/service";
 import Works from "../../components/home/works/works";
+=======
+import Hero from "@/components/home/hero/hero";
+import Service from "@/components/home/service";
+import Works from "@/components/home/works/works";
+import { ContacUs } from "@/components/home/contact_us";
+>>>>>>> Stashed changes
 
 export default function Home() {
   return (

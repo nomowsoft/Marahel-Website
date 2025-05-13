@@ -20,7 +20,11 @@ export default function Footer() {
                         <div className="col-span-12 lg:col-span-6">
                             <Image src="/footer/marahel_logo.png" alt="..." width={250} height={10} />
                             <Image src="/footer/line1.png" alt="..." width={250} height={10} className="mt-3" />
+<<<<<<< Updated upstream
                             <p className={`text-white mt-5 text-justify text-2xl font-extrabold ${isArabic ? "lg:ml-14" : "lg:mr-14"}`}>
+=======
+                            <p className={`text-white mt-5 text-justify lg:text-2xl font-extrabold ${isArabic ? "lg:ml-14" : "lg:mr-14"}`}>
+>>>>>>> Stashed changes
                                 {t('description')}
                             </p>
                         </div>

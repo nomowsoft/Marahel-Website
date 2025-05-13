@@ -35,8 +35,13 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 height={20}
+<<<<<<< Updated upstream
                 width={250}
                 src="/header/Calque_1.png"
+=======
+                width={300}
+                src="/header/new.png"
+>>>>>>> Stashed changes
                 alt="Logo"
               />
             </Link>
