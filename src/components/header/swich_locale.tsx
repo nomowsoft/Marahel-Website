@@ -17,7 +17,7 @@ export default function LocaleSwitcher() {
 
   return (
     <div>
-      <div className="flex mx-5">
+      <div className="flex mx-5" dir="rtl">
         <select
           defaultValue={localeActive}
           onChange={(e) => changeLocale(e.target.value)}

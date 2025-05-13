@@ -27,7 +27,7 @@ export default function Footer() {
                                     <hr className="border h-1.5 bg-info rounded-2xl border-info w-14 mt-2" />
                                 </div>
                             </div>
-                            <p className={`text-white mt-5 text-justify 2xl:text-2xl font-extrabold font-js ${isArabic ? "lg:ml-64" : "lg:mr-64"}`}>
+                            <p className={`text-white mt-5 text-justify 2xl:text-2xl font-extrabold font-js ${isArabic ? "lg:ml-16" : "lg:mr-16"}`}>
                                 {t('description')}
                             </p>
                         </div>
@@ -90,7 +90,7 @@ export default function Footer() {
                                     </div>
                                     <div className="mx-2 text-white font-js">
                                         <h1 className="font-extrabold">{t('phone')}</h1>
-                                        <p className="font-extrabold">
+                                        <p className="font-extrabold" dir="rtl">
                                             947 377 548 966+
                                         </p>
                                     </div>

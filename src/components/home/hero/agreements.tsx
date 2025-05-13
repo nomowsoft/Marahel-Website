@@ -23,14 +23,14 @@ const Agreements = () => {
                     alt="..."
                     width={120}
                     height={20}
-                    className={`object-cover absolute top-1 ${isArabic ? 'right-1' : 'left-0'}`}
+                    className="object-cover absolute top-1 right-1"
                 />
                 <Image
                     src="/agree/Group 1321314097.svg"
                     alt="..."
                     width={120}
                     height={20}
-                    className={`object-cover absolute bottom-1 ${isArabic ? 'left-1' : 'right-0'}`}
+                    className="object-cover absolute bottom-1 left-1"
                 />
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}

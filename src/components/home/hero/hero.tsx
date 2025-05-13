@@ -18,7 +18,7 @@ const Hero = () => {
                         </p>
                         <div className="mt-10">
                             <a href="#works" className="mx-2 bg-primary border border-primary py-3 px-4 rounded-md flex justify-center items-center lg:w-1/2">
-                                <span className="mx-2 text-lg lg:text-xl 2xl:text-2xl font-extrabold text-white">
+                                <span className="mx-2 text-lg lg:text-xl 2xl:text-xl font-extrabold text-white">
                                 {t('title_button')}
                                 </span>
                                 <Image height={20} width={25} src={`${ isArabic ? "/hero/Paper.png" : "/hero/Vector.png"}`} alt="phone" />
