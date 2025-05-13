@@ -15,6 +15,7 @@ export type Works = {
     id:number;
     description:string;
     image:string;
+    href:string
 }
 
 export type Agreements = {

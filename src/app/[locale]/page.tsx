@@ -1,15 +1,15 @@
-import Hero from "./murshed/home/hero/page";
-import WhyMurshed from './murshed/home/why_murshed/page'
-import Features from './murshed/home/features/page'
-import Work from './murshed/home/work/page'
+import Hero from "@/components/home/hero/hero";
+import Service from "@/components/home/service";
+import Works from "@/components/home/works/works";
+import { ContacUs } from "@/components/home/contact_us";
 
 export default function Home() {
   return (
     <section className="bg-gray-50">
-      <Hero /> 
-      <WhyMurshed />
-      <Features />
-      <Work />
+      <Hero />
+      <Service />
+      <Works />
+      <ContacUs />
     </section>
   );
 }

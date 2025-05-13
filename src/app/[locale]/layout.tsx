@@ -5,9 +5,8 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Link from "next/link";
 import Image from "next/image";
-
-import HeaderMurshed from "./murshed/header/Header";
-import FooterMurshed from "./murshed/footer/Footer";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 type Locale = 'en' | 'ar';
 
@@ -25,9 +24,9 @@ export default async function RootLayout({ children, params }: { children: React
       <body style={{ fontFamily: 'CustomFontName, sans-serif' }}>
         <main>
           <NextIntlClientProvider messages={messages}>
-            <HeaderMurshed />
+            <Header />
             {children}
-            <FooterMurshed />
+            <Footer />
             <div style={{
               position: "fixed",
               left: "2rem",

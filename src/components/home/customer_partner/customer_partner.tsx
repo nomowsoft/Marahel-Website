@@ -58,8 +58,8 @@ const CustomerPartner = () => {
                         </SwiperSlide>
                     ))}
                     <div className="custom-swiper-navigation flex justify-center mt-4">
-                        <div className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</div>
-                        <div className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</div>
+                        <button className={`custom-swiper-button-prev py-2 rounded-lg text-info text-5xl`}>{isArabic ? '→' : '←'}</button>
+                        <button className={`custom-swiper-button-next py-2 rounded-lg text-info text-5xl`}>{isArabic ? '←' : '→'}</button>
                     </div>
                 </Swiper>
             </div>

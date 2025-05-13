@@ -24,7 +24,7 @@ const Service = () => {
                             {services.map((item, index) => (
                                 <div
                                     key={item.id}
-                                    className={`bg-white h-72 rounded-md shadow-2xl p-4 text-black ${index === 1 ? "lg:mt-16" : index === 2 ? "lg:-mt-16" : "mt-0"}`}
+                                    className={`bg-white h-80 rounded-md shadow-2xl p-4 text-black ${index === 1 ? "lg:mt-16" : index === 2 ? "lg:-mt-16" : "mt-0"}`}
                                 >
                                     <div className="flex justify-between">
                                         <div className="flex justify-center items-center mt-2">

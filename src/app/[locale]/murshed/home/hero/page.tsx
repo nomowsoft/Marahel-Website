@@ -1,44 +1,9 @@
 "use client";
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
-import { useEffect } from 'react';
-
-declare global {
-    interface Window {
-        chatwootSDK: {
-            run: (config: {
-                websiteToken: string;
-                baseUrl: string;
-                containerId: string;
-                type: string;
-                launcherTitle?: string;
-            }) => void;
-        };
-    }
-}
 
 const Hero = () => {
     const t = useTranslations("HeroMurshed");
-    useEffect(() => {
-        (function (d, t) {
-            const BASE_URL = "https://murshed.marahel.innovalcon.com";
-            const g = d.createElement(t) as HTMLScriptElement;
-            const s = d.getElementsByTagName(t)[0];
-            g.src = BASE_URL + "/packs/js/sdk.js";
-            g.defer = true;
-            g.async = true;
-            s.parentNode?.insertBefore(g, s);
-            g.onload = function () {
-                window.chatwootSDK.run({
-                    websiteToken: 'YXMg7m1bPppGcYfipZKeqkLN',
-                    baseUrl: BASE_URL,
-                    containerId: 'chat-container',
-                    type: 'expanded_bubble',
-                    launcherTitle: 'ChatGPT Assistant',
-                });
-            };
-        })(document, "script");
-    }, []);
     return (
         <section className="bg-murshed_hero bg-contain bg-no-repeat bg-right lg:p-10">
             <div className="bg-white rounded-3xl shadow-lg p-8 lg:p-16">
