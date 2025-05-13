@@ -20,7 +20,7 @@ export const ContacUs = () => {
                 <div className="mx-3">
                   <h1 className="text-xl font-extrabold">{t('location')}</h1>
                   <p>
-                    8479 Al Mashaf, 3713  Ar Rabie Dist., Riyadh 13316 - KSA
+                    8479 Al Mashaf, 3713  Ar Rabie Dist., Riyadh 13316 - KSA 
                   </p>
                 </div>
               </div>
