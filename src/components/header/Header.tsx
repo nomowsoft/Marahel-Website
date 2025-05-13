@@ -35,8 +35,8 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 height={20}
-                width={100}
-                src="/header/logo_marahel.png"
+                width={300}
+                src="/header/new.png"
                 alt="Logo"
               />
             </Link>

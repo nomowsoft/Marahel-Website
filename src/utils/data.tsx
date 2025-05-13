@@ -58,41 +58,60 @@ export const getService = (t: (key: string) => string): Service[] => [
     }
 ];
 
-export const getWorks = (t: (key: string) => string): Works[] => [
+export const getWorks = (t: (key: string) => string, locale: string): Works[] => [
     {
         id: 1,
         description: t('title1'),
-        image: "/works/what.png",
+        image: "/works/reeal_estate.png",
+        href:"#"
     },
     {
         id: 2,
         description: t('title2'),
         image: "/works/fintax.png",
+        href:"https://fintax.cloud/"
     },
     {
         id: 3,
         description: t('title3'),
-        image: "/works/reeal_estate.png",
+        image: "/works/murshed.png",
+        href:`/${locale}/murshed`
     },
     {
         id: 4,
         description: t('title4'),
         image: "/works/what.png",
+        href:"#"
     },
     {
         id: 5,
         description: t('title5'),
-        image: "/works/murshed.png",
+        image: "/works/Vector.png",
+        href:"#"
     },
     {
         id: 6,
         description: t('title6'),
-        image: "/works/fintax.png",
+        image: "/works/sms.png",
+        href:"#"
     },
     {
         id: 7,
         description: t('title7'),
-        image: "/works/reeal_estate.png",
+        image: "/works/hr.png",
+        href:"#"
+    },
+    {
+        id: 8,
+        description: t('title8'),
+        image: "/works/self_service.png",
+        href:"#"
+    },
+    {
+        id: 9,
+        description: t('title9'),
+        image: "/works/XMLID_8_.png",
+        href:"#"
     },
 ]
 
@@ -102,46 +121,56 @@ export const getAgreements = (t: (key: string) => string): Agreements[] => [
         title: t('title1'),
         description: t('description1'),
         description1: t('description11')
-    },
-    {
-        id: 2,
-        title: t('title2'),
-        description: t('description2'),
-        description1: t('description22')
-    },
+    }
 ]
 export const cutomerpartner: CustmerPartner[] = [
     {
         id: 1,
-        image: "/customer_partner/Deef2 1.png",
+        image: "/customer_partner/1.png",
     },
     {
         id: 2,
-        image: "/customer_partner/RSSD2 1.png",
+        image: "/customer_partner/2.png",
     },
     {
         id: 3,
-        image: "/customer_partner/The National Company for Sulfur Products 1.png",
+        image: "/customer_partner/3.png",
     },
     {
         id: 4,
-        image: "/customer_partner/Deef2 1.png",
+        image: "/customer_partner/4.png",
     },
     {
         id: 5,
-        image: "/customer_partner/RSSD2 1.png",
+        image: "/customer_partner/5.png",
     },
     {
         id: 6,
-        image: "/customer_partner/The National Company for Sulfur Products 1.png",
+        image: "/customer_partner/6.png",
     },
     {
         id: 7,
-        image: "/customer_partner/Deef2 1.png",
+        image: "/customer_partner/7.png",
     },
     {
         id: 8,
-        image: "/customer_partner/RSSD2 1.png",
+        image: "/customer_partner/8.png",
+    },
+    {
+        id: 9,
+        image: "/customer_partner/9.png",
+    },
+    {
+        id: 10,
+        image: "/customer_partner/10.png",
+    },
+    {
+        id: 11,
+        image: "/customer_partner/11.png",
+    },
+    {
+        id: 12,
+        image: "/customer_partner/12.png",
     },
 ]
 // data for murshed
