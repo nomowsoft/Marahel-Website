@@ -63,7 +63,7 @@ export const getWorks = (t: (key: string) => string, locale: string): Works[] =>
         id: 1,
         description: t('title1'),
         image: "/works/reeal_estate.png",
-        href:"#"
+        href:"#works"
     },
     {
         id: 2,
@@ -81,37 +81,37 @@ export const getWorks = (t: (key: string) => string, locale: string): Works[] =>
         id: 4,
         description: t('title4'),
         image: "/works/what.png",
-        href:"#"
+        href:"#works"
     },
     {
         id: 5,
         description: t('title5'),
         image: "/works/Vector.png",
-        href:"#"
+        href:"#works"
     },
     {
         id: 6,
         description: t('title6'),
         image: "/works/sms.png",
-        href:"#"
+        href:"#works"
     },
     {
         id: 7,
         description: t('title7'),
         image: "/works/hr.png",
-        href:"#"
+        href:"#works"
     },
     {
         id: 8,
         description: t('title8'),
         image: "/works/self_service.png",
-        href:"#"
+        href:"#works"
     },
     {
         id: 9,
         description: t('title9'),
         image: "/works/XMLID_8_.png",
-        href:"#"
+        href:"#works"
     },
 ]
 

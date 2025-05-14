@@ -53,13 +53,13 @@ const Works = () => {
                 >
                     {works?.map((work) => (
                         <SwiperSlide key={work.id} className="bg-white p-5 rounded-md shadow-lg border border-success">
-                            <a href={work.href}>
-                                <div className="h-64">
+                            <a href={work.href} target={work.href !== "#works" ? '_blank' : ''}>
+                               <div className="h-64 flex flex-col ">
                                     <div className="h-32 flex justify-center items-center">
                                         <Image src={work.image} alt="" width={100} height={20} />
                                     </div>
-                                    <div className="mt-12 mb-3">
-                                        <p className="mt-1 text-lg text-gray-600 text-center">
+                                    <div className="mt-4">
+                                        <p className="text-lg text-gray-600 text-center">
                                             {work.description}
                                         </p>
                                     </div>
