@@ -11,7 +11,7 @@ export default function FooterMurshed() {
                 <div className='bg-primary px-5 lg:px-20 pt-8'>
                     <div className="lg:flex justify-between">
                         <div className="text-center">
-                            <h1 className="text-white text-3xl font-extrabold">Murshed</h1>
+                            <h1 className="text-white text-3xl font-extrabold">Morshed</h1>
                         </div>
                         <div className="text-center mt-10 lg:mt-0">
                             <Link href="/">

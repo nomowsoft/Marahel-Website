@@ -75,7 +75,7 @@ export const getWorks = (t: (key: string) => string, locale: string): Works[] =>
         id: 3,
         description: t('title3'),
         image: "/works/murshed.png",
-        href:`/${locale}/murshed`
+        href:`/${locale}/morshed`
     },
     {
         id: 4,

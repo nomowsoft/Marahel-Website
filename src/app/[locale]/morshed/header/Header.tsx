@@ -32,7 +32,7 @@ export default function HeaderMurshed() {
         <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 py-4 relative">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center text-primary text-3xl font-extrabold">
-              Murshed
+              Morshed
             </Link>
             <div className="hidden lg:flex">
               <Navlink />
