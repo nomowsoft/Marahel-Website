@@ -24,6 +24,7 @@ export default function LocaleSwitcher() {
           className="text-primary bg-transparent focus:border focus:border-white"
         >
           <option value="ar">عربي</option>
+          <option value="en">English</option>
         </select>
         <Image src="/header/Frame 194 (4).png" alt="" width={40} height={10} />
       </div>
