@@ -41,7 +41,7 @@ export const ContacUs = () => {
                 </div>
                 <div className="mx-3">
                   <h1 className="text-xl font-extrabold">{t('phone')}</h1>
-                  <p>
+                  <p dir="rtl">
                     242 710 546 966+
                   </p>
                 </div>

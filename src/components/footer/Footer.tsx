@@ -63,7 +63,7 @@ export default function Footer() {
                                     </div>
                                     <div className="mx-3 text-white">
                                         <h1 className="lg:text-lg xl:text-xl font-extrabold ">{t('phone')}</h1>
-                                        <p className="font-extrabold">
+                                        <p className="font-extrabold" dir="rtl">
                                             242 710 546 966+
                                         </p>
                                     </div>
