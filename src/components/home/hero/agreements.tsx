@@ -14,8 +14,8 @@ const Agreements = () => {
     const locale = useLocale();
     const isArabic = locale === 'ar';
     return (
-        <div className="pt-12 lg:pt-40 pb-10 mx-5 md:mx-20">
-            <h1 className="text-center text-3xl lg:text-7xl text-primary font-extrabold">{t('title')}</h1>
+        <div className="pt-12 lg:pt-25 pb-10 mx-5 md:mx-20">
+            <h1 className="text-center text-3xl lg:text-5xl 2xl:text-6xl text-primary font-extrabold">{t('title')}</h1>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 autoplay={{

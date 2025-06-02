@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className={`${ new_path === `/${locale}/morshed` ? 'hidden' : ''}`}>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 relative w-full">
-        <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 py-4 relative">
+        <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 relative">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center">
               <Image
@@ -51,7 +51,7 @@ export default function Header() {
               className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
             >
               <span className="mx-2 text-xl text-primary font-extrabold" dir="rtl">
-                242 710 546 996+
+                242 710 546 966+
               </span>
               <div className="flex justify-center items-center">
                 <Image
@@ -113,8 +113,8 @@ export default function Header() {
                 href="#"
                 className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
               >
-                <span className="mx-2 text-xl text-primary font-extrabold">
-                  242 710 546 996+
+                <span className="mx-2 text-xl text-primary font-extrabold" dir="rtl">
+                  242 710 546 966+
                 </span>
                 <div className="flex justify-center items-center">
                   <Image

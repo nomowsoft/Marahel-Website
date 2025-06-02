@@ -14,9 +14,9 @@ export default function Footer() {
 
     return (
         <section className={`${ new_path === `/${locale}/morshed` ? 'hidden' : ''}`}>
-            <footer className="bg-primary lg:bg-transparent lg:bg-footer bg-cover lg:bg-cover bg-no-repeat lg:h-screen bg-center w-full py-8 lg:pt-56 px-5 lg:px-20">
+            <footer className="bg-primary lg:bg-transparent lg:bg-footer bg-cover lg:bg-contain bg-no-repeat lg:h-screen bg-center w-full py-8 lg:pt-56 px-5 lg:px-20">
                 <div className="flex justify-center items-center">
-                    <div className="grid grid-cols-12 xl:mt-44">
+                    <div className="grid grid-cols-12 xl:mt-24">
                         <div className="col-span-12 lg:col-span-6">
                             <Image src="/footer/marahel_logo.png" alt="..." width={250} height={10} />
                             <Image src="/footer/line1.png" alt="..." width={250} height={10} className="mt-3" />
