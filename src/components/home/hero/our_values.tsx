@@ -10,7 +10,7 @@ const OurValues = () => {
     const heightClass = locale === 'ar' ? "h-80" : "h-96";
     return (
         <div className="py-12">
-            <h1 className="text-center text-3xl lg:text-5xl text-primary font-extrabold">{t('title')}</h1>
+            <h1 className="text-center text-3xl lg:text-5xl 2xl:text-6xl text-primary font-extrabold">{t('title')}</h1>
             <p className="text-gray-500 text-center text-lg lg:text-2xl mt-5 lg:max-w-screen-md lg:mx-auto">
                 {t('description')}
             </p>

@@ -17,8 +17,8 @@ const Works = () => {
     const isArabic = locale === 'ar';
   return (
     <section className="bg-works bg-right bg-contain bg-no-repeat" id="works">
-        <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-32 pb-10">
-            <h1 className="text-center text-3xl lg:text-7xl text-primary font-semibold">{t('title')}</h1>
+        <div className="mx-5 lg:mx-10 xl:mx-20 pt-20 lg:pt-12 pb-10">
+            <h1 className="text-center text-3xl lg:text-5xl 2xl:text-6xl text-primary font-semibold">{t('title')}</h1>
             <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
                 {t('description')}
             </p>

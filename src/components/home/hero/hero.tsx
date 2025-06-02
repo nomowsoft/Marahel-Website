@@ -7,21 +7,21 @@ const Hero = () => {
     const locale = useLocale();
     const isArabic = locale === 'ar'
   return (
-    <section className="bg-hero bg-cover bg-no-repeat pt-20">
+    <section className="bg-hero bg-cover bg-no-repeat pt-2">
         <div className="py-12 mx-5 md:mx-20">
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-12 md:col-span-7 flex justify-center items-center">
                     <div>
-                        <h1 className="text-primary text-3xl lg:text-5xl xl:text-7xl font-extrabold">{t('title')}</h1>
-                        <p className="text-xl lg:text-2xl xl:text-3xl  font-extrabold mt-10 text-justify">
+                        <h1 className="text-primary text-3xl lg:text-5xl 2xl:text-6xl font-extrabold">{t('title')}</h1>
+                        <p className="text-xl lg:text-2xl 2npxl:text-3xl  font-extrabold mt-10 text-justify">
                         {t('description')}
                         </p>
                         <div className="mt-10">
                             <a href="#works" className="mx-2 bg-primary border border-primary py-3 px-4 rounded-md flex justify-center items-center md:w-1/2">
-                                <span className="mx-2 text-xl lg:text-2xl font-extrabold text-white">
+                                <span className="mx-2 text-xl lg:text-xl 2ءم:text-2xl font-extrabold text-white">
                                 {t('title_button')}
                                 </span>
-                                <Image height={20} width={20} src={`${ isArabic ? "/hero/Paper.png" : "/hero/Vector.png"}`} alt="phone" />
+                                <Image height={20} width={12} src={`${ isArabic ? "/hero/Paper.png" : "/hero/Vector.png"}`} alt="phone" />
                             </a>
                         </div>
                     </div>

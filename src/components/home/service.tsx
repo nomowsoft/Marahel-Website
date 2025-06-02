@@ -33,7 +33,7 @@ const Service = () => {
                         <Image className={`absolute hidden sm:block ${isArabic ? "lg:right-10 xl:mt-10 xl:right-10 2xl:right-44 top-[42rem] lg:top-[45rem] xl:top-[42rem]" : "lg:left-10 xl:mt-10 xl:left-10 2xl:left-44 top-[42rem] lg:top-[45rem] xl:top-[45rem]"}`} src="/service/Group 8.png" alt="..." width={300} height={20} />
                         <Image className={`absolute opacity-30 hidden sm:block ${isArabic ? "lg:right-[21rem] 2xl:right-[30rem] top-[42rem] xl:top-[44rem] lg:top-[45rem]" : "lg:left-[21rem] 2xl:left-[30rem] top-[42rem] xl:top-[48rem] lg:top-[45rem]"}`} src="/service/javascript.png" alt="..." width={100} height={20} />
                         <div className="max-w-screen-2xl mx-auto">
-                            <h1 className="text-center text-2xl sm:text-4xl lg:text-6xl xl:text-7xl font-extrabold pt-16 sm:pt-20">
+                            <h1 className="text-center text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-extrabold pt-16 sm:pt-20">
                                 {t('title')}
                             </h1>
                             <div className="flex flex-wrap justify-center items-center">
