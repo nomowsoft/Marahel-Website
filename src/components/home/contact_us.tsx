@@ -7,7 +7,7 @@ export const ContacUs = () => {
   const locale = useLocale();
   const isArabic = locale === 'ar';
   return (
-    <section className="lg:-mb-56 lg:relative">
+    <section className="lg:-mb-32 2xl:-mb-56 lg:relative">
       <div className="max-w-screen-lg mx-auto">
         <div className="bg-white shadow-2xl rounded-lg py-6 px-10">
           <h1 className="text-primary text-center text-4xl font-extrabold">{t('title')}</h1>
@@ -42,7 +42,7 @@ export const ContacUs = () => {
                 <div className="mx-3">
                   <h1 className="text-xl font-extrabold">{t('phone')}</h1>
                   <p dir="rtl">
-                    242 710 546 966+
+                    947 377 548 966+
                   </p>
                 </div>
               </div>
