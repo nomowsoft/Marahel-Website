@@ -34,10 +34,10 @@ export default async function RootLayout({ children, params }: { children: React
               bottom: "5rem",
               zIndex: 1000, // للتأكد من أنها تظهر فوق جميع العناصر الأخرى
             }}>
-              <Link  href="https://wa.me/+9660546710242" target="_blank" className="block lg:hidden">
+              <Link  href="https://wa.me/+9660548377947" target="_blank" className="block lg:hidden">
                 <Image src="/footer/whatsapp.png" alt="..." width={60} height={20} />
               </Link>
-              <Link  href="https://web.whatsapp.com/send?phone=+966 0546710242" target="_blank" className="hidden lg:block">
+              <Link  href="https://web.whatsapp.com/send?phone=+966 0548377947" target="_blank" className="hidden lg:block">
                 <Image src="/footer/whatsapp.png" alt="..." width={60} height={20} />
               </Link>
             </div>

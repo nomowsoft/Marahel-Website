@@ -27,15 +27,16 @@ export default function Header() {
 
   const pathname = usePathname();
   const new_path = `${pathname}`
+  const isArabic = locale === 'ar';
   return (
     <header className={`${ new_path === `/${locale}/morshed` ? 'hidden' : ''}`}>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 relative w-full">
-        <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 relative">
+        <div className="flex flex-wrap justify-between items-center  lg:mx-10 xl:mx-20 relative">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center">
               <Image
                 height={20}
-                width={300}
+                width={250}
                 src="/header/new.png"
                 alt="Logo"
               />
@@ -51,7 +52,7 @@ export default function Header() {
               className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
             >
               <span className="mx-2 text-xl text-primary font-extrabold" dir="rtl">
-                242 710 546 966+
+                947 377 548 966+
               </span>
               <div className="flex justify-center items-center">
                 <Image
@@ -68,7 +69,7 @@ export default function Header() {
             aria-controls="mobile-menu"
             aria-expanded={isMobileMenuOpen}
             onClick={toggleMobileMenu}
-            className="lg:hidden inline-flex items-center p-2 text-sm text-primary rounded-lg hover:bg-white focus:outline-none focus:ring-2 focus:ring-gray-200 border border-primary"
+            className="lg:hidden inline-flex items-center p-1 text-sm text-primary rounded-lg hover:bg-white focus:outline-none focus:ring-2 focus:ring-gray-200 border border-primary"
           >
             <span className="sr-only">فتح القائمة الرئيسية</span>
             {isMobileMenuOpen ? (
@@ -102,32 +103,43 @@ export default function Header() {
 
           {/* Mobile menu */}
           <div
-            className={`absolute top-28 py-4 left-0 bg-white shadow-lg transition-all duration-300 ease-in-out text-center ${
-              isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
-            } lg:hidden w-full`}
-            id="mobile-menu"
-          >
-            <Navlink />
-            <div className="mt-8">
-              <Link
-                href="#"
-                className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
-              >
-                <span className="mx-2 text-xl text-primary font-extrabold" dir="rtl">
-                  242 710 546 966+
-                </span>
-                <div className="flex justify-center items-center">
-                  <Image
-                    height={0} width={40} src="/header/phone.png"
-                    alt="phone"
-                  />
-                </div>
-              </Link>
-            </div>
-            <div className="mt-4">
-              <LocaleSwitcher />
-            </div>
+          className={`absolute top-28 py-4 ${isArabic ? 'right-0' : 'left-0'} bg-white shadow-lg transition-all duration-300 ease-in-out text-center
+            ${
+              isMobileMenuOpen
+                ? "opacity-100 translate-x-0"
+                : isArabic
+                ? "opacity-0 translate-x-full"
+                : "opacity-0 -translate-x-full"
+            }
+            lg:hidden w-full`}
+          id="mobile-menu"
+        >
+          <Navlink />
+
+          <div className="mt-8">
+            <Link
+              href="#"
+              className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
+            >
+              <span className="mx-2 text-xl text-primary font-extrabold" dir="rtl">
+                947 377 548 966+
+              </span>
+              <div className="flex justify-center items-center">
+                <Image
+                  height={0}
+                  width={40}
+                  src="/header/phone.png"
+                  alt="phone"
+                />
+              </div>
+            </Link>
           </div>
+
+          <div className="mt-4">
+            <LocaleSwitcher />
+          </div>
+        </div>
+
         </div>
       </nav>
     </header>
