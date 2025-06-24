@@ -6,9 +6,9 @@ export const ContacUs = () => {
   const locale = useLocale();
   const isArabic = locale === 'ar';
   return (
-    <section className="lg:-mb-32 2xl:-mb-56 lg:relative">
-      <div className="max-w-screen-lg mx-auto">
-        <div className="bg-white shadow-2xl rounded-lg py-6 px-10">
+    <section className="lg:-mb-72 xl:-mb-80 2xl:-mb-96 lg:relative">
+      <div className="lg:max-w-screen-lg mb-3 mx-8 lg:mx-auto">
+        <div className="bg-white shadow-2xl rounded-lg py-20 px-10">
           <h1 className="text-primary text-center text-4xl font-extrabold">{t('title')}</h1>
           <div className="grid lg:grid-cols-2 gap-4">
             <div className="py-10">
