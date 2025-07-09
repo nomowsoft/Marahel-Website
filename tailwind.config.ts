@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jf: ["'CustomFontName'", "sans-serif"],
+        js: ["'Somar'", "sans-serif"],
+      },
       colors: {
         primary: "#463192",
         secondary: "#F6EBFF",
@@ -17,6 +21,8 @@ export default {
       },
     },
     backgroundImage: {
+      agree1: "url('/agree/Group 1321314096.svg')",
+      agree: "url('/agree/Group 1321314097.svg')",
       hero: "url('/hero/hero_back.svg')",
       service: "url('/service/section (2) (2).svg')",
       works: "url('/works/Ellipse 5.png')",

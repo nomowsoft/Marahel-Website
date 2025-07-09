@@ -36,25 +36,25 @@ export const getService = (t: (key: string) => string): Service[] => [
         id: 1,
         title: t('title1'),
         description: t('description1'),
-        image: "/service/Frame 44 (3).png"
+        image: "/service/Frame 44 (1).svg"
     },
     {
         id: 2,
         title: t('title2'),
         description: t('description2'),
-        image: "/service/Frame 44.png"
+        image: "/service/Frame 44 (2).svg"
     },
     {
         id: 3,
         title: t('title3'),
         description: t('description3'),
-        image: "/service/Frame 44 (1).png"
+        image: "/service/Frame 44 (3).svg"
     },
     {
         id: 4,
         title: t('title4'),
         description: t('description4'),
-        image: "/service/Frame 44 (2).png"
+        image: "/service/Frame 44 (4).svg"
     }
 ];
 
@@ -62,55 +62,55 @@ export const getWorks = (t: (key: string) => string, locale: string): Works[] =>
     {
         id: 1,
         description: t('title1'),
-        image: "/works/reeal_estate.png",
+        image: "/works/realesate.svg",
         href:"#works"
     },
     {
         id: 2,
         description: t('title2'),
-        image: "/works/fintax.png",
+        image: "/works/fin_tax.svg",
         href:"https://fintax.cloud/"
     },
     {
         id: 3,
         description: t('title3'),
-        image: "/works/murshed.png",
+        image: "/works/murshed.svg",
         href:`/${locale}/morshed`
     },
     {
         id: 4,
         description: t('title4'),
-        image: "/works/what.png",
+        image: "/works/whats.svg",
         href:"#works"
     },
     {
         id: 5,
         description: t('title5'),
-        image: "/works/Vector.png",
+        image: "/works/Vector.svg",
         href:"#works"
     },
     {
         id: 6,
         description: t('title6'),
-        image: "/works/sms.png",
+        image: "/works/sms.svg",
         href:"#works"
     },
     {
         id: 7,
         description: t('title7'),
-        image: "/works/hr.png",
+        image: "/works/hr.svg",
         href:"#works"
     },
     {
         id: 8,
         description: t('title8'),
-        image: "/works/self_service.png",
+        image: "/works/self_services.svg",
         href:"#works"
     },
     {
         id: 9,
         description: t('title9'),
-        image: "/works/XMLID_8_.png",
+        image: "/works/XMLID_8_.svg",
         href:"#works"
     },
 ]

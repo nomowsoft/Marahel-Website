@@ -39,7 +39,7 @@ const Service = () => {
                             <div className="flex flex-wrap justify-center items-center">
                                 <div className="w-full lg:w-2/4 md:pt-0">
                                     <h1 className="text-xl sm:text-2xl lg:text-4xl font-extrabold">{t('title0')}</h1>
-                                    <p className={`mt-4 sm:mt-6 text-lg font-extrabold sm:text-xl lg:text-2xl text-justify pb-5 lg:pb-0 ${isArabic ? "md:ml-10" : "md:mr-10"}`}>
+                                    <p className={`mt-4 sm:mt-6 text-lg font-extrabold font-js sm:text-xl lg:text-2xl text-justify pb-5 lg:pb-0 ${isArabic ? "md:ml-10" : "md:mr-10"}`}>
                                         {t('description')}
                                     </p>
                                 </div>
@@ -55,10 +55,10 @@ const Service = () => {
                                                         <Image src={item.image} alt="..." height={10} width={60} />
                                                     </div>
                                                 </div>
-                                                <div className="mt-4 font-extrabold text-lg">
+                                                <div className="mt-4 font-extrabold font-jf text-lg">
                                                     <h1>{item.id}. {item.title}</h1>
                                                 </div>
-                                                <div className="mt-4 lg:text-sm xl:text-lg font-semibold">
+                                                <div className="mt-4 lg:text-sm xl:text-lg font-semibold font-js">
                                                     <p className="text-gray-500">{item.description}</p>
                                                 </div>
                                             </div>

@@ -12,8 +12,8 @@ const Hero = () => {
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-12 md:col-span-7 flex justify-center items-center">
                     <div>
-                        <h1 className="text-primary text-3xl lg:text-5xl 2xl:text-6xl font-extrabold">{t('title')}</h1>
-                        <p className="text-xl lg:text-2xl 2npxl:text-3xl font-extrabold mt-10 lg:text-right" dir={isArabic ? "rtl" : "ltr"}>
+                        <h1 className="text-primary text-3xl lg:text-5xl 2xl:text-6xl font-extrabold font-jf">{t('title')}</h1>
+                        <p className={`text-xl lg:text-2xl 2npxl:text-3xl font-black mt-10 lg:text-right font-js ${isArabic ? 'xl:ml-56' : ''}`} dir={isArabic ? "rtl" : "ltr"}>
                         {t('description')}
                         </p>
                         <div className="mt-10">
@@ -21,13 +21,13 @@ const Hero = () => {
                                 <span className="mx-2 text-lg lg:text-xl 2xl:text-2xl font-extrabold text-white">
                                 {t('title_button')}
                                 </span>
-                                <Image height={20} width={12} src={`${ isArabic ? "/hero/Paper.png" : "/hero/Vector.png"}`} alt="phone" />
+                                <Image height={20} width={25} src={`${ isArabic ? "/hero/Paper.png" : "/hero/Vector.png"}`} alt="phone" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="col-span-12 md:col-span-5 flex justify-center items-center">
-                    <Image src="/hero/OBJECTS.png" alt="..." width={1000} height={10} />
+                    <Image src="/hero/OBJECTS.svg" alt="..." width={1000} height={10} />
                 </div>
             </div>
             <Agreements />
