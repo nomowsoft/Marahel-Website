@@ -128,7 +128,7 @@ export default function Header() {
                 <Image
                   height={0}
                   width={40}
-                  src="/header/phone.png"
+                  src="/header/phone.svg"
                   alt="phone"
                 />
               </div>
