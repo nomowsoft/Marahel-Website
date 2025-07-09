@@ -26,7 +26,7 @@ export default function LocaleSwitcher() {
           <option value="ar">عربي</option>
           <option value="en">English</option>
         </select>
-        <Image src="/header/Frame 194 (4).png" alt="" width={40} height={10} />
+        <Image src="/header/swich_language.svg" alt="" width={40} height={10} />
       </div>
     </div>
   );

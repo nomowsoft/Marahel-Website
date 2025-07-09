@@ -17,7 +17,7 @@ const CustomerPartner = () => {
         <section className="pb-12 lg:pb-30">
             <div className="max-w-screen-2xl mx-auto">
                 <h1 className="text-center text-3xl lg:text-4xl text-primary font-semibold">{t('title')}​</h1>
-                <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-medium">
+                <p className="mt-6 text-xl lg:text-2xl text-center max-w-screen-md mx-auto text-gray-500 font-bold font-js">
                     {t('description')}
                 </p>
             </div>

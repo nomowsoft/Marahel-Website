@@ -28,12 +28,7 @@ export default async function RootLayout({ children, params }: { children: React
             <Header />
             {children}
             <Footer />
-            <div style={{
-              position: "fixed",
-              left: "2rem",
-              bottom: "5rem",
-              zIndex: 1000, // للتأكد من أنها تظهر فوق جميع العناصر الأخرى
-            }}>
+            <div className={`fixed bottom-10 ${locale === 'ar' ? 'left-10' : 'right-10'}`}>
               <Link  href="https://wa.me/+9660548377947" target="_blank" className="block lg:hidden">
                 <Image src="/footer/whatsapp.png" alt="..." width={60} height={20} />
               </Link>

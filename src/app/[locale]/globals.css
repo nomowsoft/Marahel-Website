@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'CustomFontName';
-  src: url('/fonts/Cairo-Light-BF643384ef1c5f4.ttf') format('woff2');
+  src: url('/fonts/Cairo-Bold-BF643384ee22aa6.ttf') format('woff2');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Somar';
-  src: url('/fonts/alfont_com_SomarGX.ttf') format('woff2');
+  src: url('/fonts/Cairo-Light-BF643384ef1c5f4.ttf') format('woff2');
   font-style: normal;
 }
 
