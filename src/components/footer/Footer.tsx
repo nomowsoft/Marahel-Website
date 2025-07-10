@@ -14,7 +14,7 @@ export default function Footer() {
 
     return (
         <section className={`${ new_path === `/${locale}/morshed` ? 'hidden' : ''}`}>
-            <footer className="bg-primary lg:bg-transparent lg:bg-footer bg-cover bg-no-repeat min-h-screen lg:min-h-[650px] xl:min-h-[700px] 2xl:min-h-[800px]  bg-center w-full lg:pt-48 xl:pt-32 2xl:pt-52 px-5 lg:px-20">
+            <footer className="bg-primary lg:bg-transparent lg:bg-footer bg-cover bg-no-repeat lg:min-h-[650px] xl:min-h-[700px] 2xl:min-h-[800px] bg-center w-full pt-10 pb-10 lg:pb-0 lg:pt-80 xl:pt-72 2xl:pt-[360px] px-5 lg:px-20">
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-12 xl:mt-24">
                         <div className="col-span-12 lg:col-span-4 xl:col-span-6">
@@ -27,7 +27,7 @@ export default function Footer() {
                                     <hr className="border h-1.5 bg-info rounded-2xl border-info w-14 mt-2" />
                                 </div>
                             </div>
-                            <p className={`text-white mt-5 text-justify 2xl:text-2xl font-extrabold font-js ${isArabic ? "lg:ml-64" : "lg:mr-64"}`}>
+                            <p className={`text-white mt-5 text-justify 2xl:text-2xl font-extrabold font-js ${isArabic ? "lg:ml-16" : "lg:mr-16"}`}>
                                 {t('description')}
                             </p>
                         </div>
