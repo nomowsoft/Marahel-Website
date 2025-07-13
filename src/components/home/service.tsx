@@ -23,7 +23,6 @@ const Service = () => {
                         />
                     </svg>
                     <div className="bg-primary text-white px-8 pt-10">
-                        {/* <Image className={`absolute top-16 opacity-30 hidden sm:block ${isArabic ? "right-10" : "left-10"}`} src="/service/odoo.png" alt="..." width={200} height={20} /> */}
                         <Image className={`absolute top-16 opacity-30 hidden sm:block ${isArabic ? "right-10" : "left-10"}`} src="/service/odoo.png" alt="..." width={200} height={20} />
                         <Image className={`absolute top-96 hidden sm:block ${isArabic ? "right-2" : "left-2"}`} src="/service/react.png" alt="..." width={200} height={20} />
                         <Image className={`absolute top-60 opacity-30 hidden sm:block ${isArabic ? "lg:right-60 xl:right-48 2xl:right-80" : "lg:left-60 xl:left-48 2xl:left-80"}`} src="/service/bootstrap.png" alt="..." width={250} height={20} />

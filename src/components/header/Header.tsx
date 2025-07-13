@@ -47,7 +47,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex items-center space-x-6">
             <LocaleSwitcher />
-            <Link
+            <Link dir="rtl"
               href="#"
               className="mx-2 border border-secondary py-2 px-4 rounded-md flex justify-center items-center"
             >

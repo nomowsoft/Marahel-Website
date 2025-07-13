@@ -146,7 +146,7 @@ export const cutomerpartner: CustmerPartner[] = [
     },
     {
         id: 6,
-        image: "/customer_partner/6.png",
+        image: "/customer_partner/Noura.svg",
     },
     {
         id: 7,
