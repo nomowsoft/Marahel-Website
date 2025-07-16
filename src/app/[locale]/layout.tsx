@@ -19,7 +19,7 @@ export default async function RootLayout({ children, params }: { children: React
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
        <head>
-        <link rel="icon" href="/header/logo_marahel.png" />
+        <link rel="icon" href="https://marahel.com.sa/header/logo_marahel.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
       </head>
       <body style={{ fontFamily: 'CustomFontName, sans-serif' }}>
