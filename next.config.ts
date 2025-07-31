@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
  
 const nextConfig: NextConfig = {
     env: {
-        NEXT_PUBLIC_API_URL: "http://ahmed:8041",
+        NEXT_PUBLIC_API_URL: "https://support.marahel.sa",
     },
     images: {
         domains: ['localhost'],
