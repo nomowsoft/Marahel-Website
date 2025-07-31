@@ -13,7 +13,12 @@ export default function Footer() {
     console.log(new_path);
 
     return (
-        <section className={`${ new_path === `/${locale}/morshed` ? 'hidden' : ''}`}>
+        <section className={
+                [`/${locale}/morshed`, `/${locale}/morshed/contact_us`].includes(new_path)
+                ? 'hidden'
+                : ''
+            }
+        >
             <footer className="bg-primary lg:bg-transparent lg:bg-footer bg-cover bg-no-repeat min-h-screen lg:min-h-[650px] xl:min-h-[700px] 2xl:min-h-[800px]  bg-center w-full lg:pt-48 xl:pt-32 2xl:pt-52 px-5 lg:px-20">
                 <div className="flex justify-center items-center">
                     <div className="grid grid-cols-12 xl:mt-24">

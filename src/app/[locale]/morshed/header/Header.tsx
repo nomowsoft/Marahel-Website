@@ -31,7 +31,7 @@ export default function HeaderMurshed() {
       <nav className="bg-white border-gray-200 px-4 lg:px-6">
         <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 py-4 relative">
           <div className="flex items-center space-x-6">
-            <Link href="/" className="flex items-center text-primary text-3xl font-extrabold">
+            <Link href={`/${locale}/morshed`} className="flex items-center text-primary text-3xl font-extrabold">
               Morshed
             </Link>
             <div className="hidden lg:flex">
@@ -41,7 +41,7 @@ export default function HeaderMurshed() {
           <div className="hidden lg:flex items-center space-x-6">
             <LocaleSwitcher />
             <Link
-              href="#"
+              href={`/${locale}/morshed/contact_us`}
               className="mx-2 border border-primary bg-primary text-white py-1 px-4 rounded-2xl text-xl font-extrabold text-center"
             >
               <div className="flex justify-center items-center"> 
@@ -107,7 +107,7 @@ export default function HeaderMurshed() {
             <Navlink />
             <div className="mt-4">
               <Link
-                href="#"
+                href={`/${locale}/morshed/contact_us`}
                 className="flex justify-center items-center mx-6 text-white bg-primary hover:bg-primary hover:text-success hover:border hover:border-success focus:ring-4 focus:ring-primary-300 text-xl rounded-lg px-2 md:px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-2"
               >
                 {isArabic ? "تواصل معنا" : "Contact Us"}
