@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Contactus = () => {
-  const t = useTranslations('ContactUs');
+  const t = useTranslations('ContactUs')
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -49,7 +49,8 @@ const Contactus = () => {
       setTitle('');
       setMessage('');
     } else {
-      toast.error(t('error'));
+      const data = await res.json();
+      toast.error(data.message);
     }
   };
 
