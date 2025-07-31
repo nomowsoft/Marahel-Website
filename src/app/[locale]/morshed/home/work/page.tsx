@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const Work = () => {
+    const locale = useLocale();
     const t = useTranslations("WorkMurshed");
     return (
         <section>
@@ -42,7 +43,7 @@ const Work = () => {
                                     </p>
                                 </div>
                                 <div className="px-5 xl:px-14 mt-6 lg:mt-0">
-                                    <Link href="#">
+                                    <Link href={`/${locale}/morshed/contact_us`}>
                                         <div className="flex justify-between items-center border border-primary bg-primary text-white py-1 px-4 lg:px-6 rounded-2xl md:text-xl lg:text-2xl text-center"> 
                                             <div>
                                                 <p>

@@ -29,7 +29,12 @@ export default function Header() {
   const new_path = `${pathname}`
   const isArabic = locale === 'ar';
   return (
-    <header className={`${ new_path === `/${locale}/morshed` ? 'hidden' : ''}`}>
+    <header className={
+        [`/${locale}/morshed`, `/${locale}/morshed/contact_us`].includes(new_path)
+        ? 'hidden'
+        : ''
+      }
+    >
       <nav className="bg-white border-gray-200 px-4 lg:px-6 relative w-full">
         <div className="flex flex-wrap justify-between items-center  lg:mx-10 xl:mx-20 relative">
           <div className="flex items-center space-x-6 my-2">
