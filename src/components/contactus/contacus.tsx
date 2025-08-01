@@ -65,10 +65,10 @@ const Contactus = () => {
     <section className="py-10 lg:py-32">
       <div className="max-w-screen-lg mx-auto">
         <div className="bg-gray-200 shadow-2xl rounded-lg py-6 px-10">
-          <h1 className="text-primary text-center text-4xl font-extrabold lg:mb-10 font-jf">{t('title')}</h1>
+          <h1 className="text-primary text-center text-4xl font-extrabold mb-4 lg:mb-10 font-jf">{t('title')}</h1>
           <form onSubmit={handleContactUs}>
             <div className="grid grid-cols-12 gap-4">
-              <div className="py-2 col-span-1 lg:col-span-6">
+              <div className="py-2 col-span-12 lg:col-span-6">
                 <input
                   type="text"
                   className="border border-gray-500 rounded-xl 
@@ -80,7 +80,7 @@ const Contactus = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="py-2 col-span-1 lg:col-span-6">
+              <div className="py-2 col-span-12 lg:col-span-6">
                 <input
                   type="text"
                   className="border border-gray-500 rounded-xl 
@@ -92,7 +92,7 @@ const Contactus = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="py-2 col-span-1 lg:col-span-6">
+              <div className="py-2 col-span-12 lg:col-span-6">
                 <input
                   type="text"
                   className="border border-gray-500 rounded-xl 
@@ -104,7 +104,7 @@ const Contactus = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
-              <div className="py-2 col-span-1 lg:col-span-6">
+              <div className="py-2 col-span-12 lg:col-span-6">
                 <input
                   type="text"
                   className="border border-gray-500 rounded-xl 
@@ -116,7 +116,7 @@ const Contactus = () => {
                   onChange={(e) => setTitle(e.target.value)}
                 />
               </div>
-              <div className="py-2 col-span-1 lg:col-span-12">
+              <div className="py-2 col-span-12 lg:col-span-122">
                 <textarea
                   className="border border-gray-500 rounded-xl 
                             placeholder:text-gray-500 text-gray-500 text-xl font-bold font-js w-full h-32 px-5 py-3 
