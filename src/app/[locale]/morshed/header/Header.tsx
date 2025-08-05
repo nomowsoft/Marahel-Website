@@ -30,7 +30,7 @@ export default function HeaderMurshed() {
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6">
         <div className="flex flex-wrap justify-between items-center mx-5 lg:mx-10 xl:mx-20 py-4 relative">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center lg:space-x-3 xl:space-x-6">
             <Link href={`/${locale}/morshed`} className="flex items-center text-primary text-3xl font-extrabold">
               Morshed
             </Link>
@@ -38,15 +38,23 @@ export default function HeaderMurshed() {
               <Navlink />
             </div>
           </div>
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center lg:space-x-3 xl:space-x-6">
             <LocaleSwitcher />
             <Link
               href={`/${locale}/morshed/contact_us`}
               className="mx-2 border border-primary bg-primary text-white py-1 px-4 rounded-2xl text-xl font-extrabold text-center"
             >
-              <div className="flex justify-center items-center"> 
+              <div className="flex justify-center items-center">
                 {isArabic ? "تواصل معنا" : "Contact Us"}
-                <Image src="/murshed/contact_us_image.png" alt="" width={30} height={20} className="mt-2" /> 
+                <Image src="/murshed/contact_us_image.png" alt="" width={30} height={20} className="mt-2" />
+              </div>
+            </Link>
+            <Link
+              href="https://morshed.marahel.sa/app/login" target="balank"
+              className="mx-2 border border-primary bg-primary text-white py-2.5 px-4 rounded-2xl text-xl font-extrabold text-center"
+            >
+              <div className="flex justify-center items-center">
+                {isArabic ? "تسجيل الدخول" : "Login"}
               </div>
             </Link>
           </div>
@@ -91,13 +99,11 @@ export default function HeaderMurshed() {
 
           {/* Mobile menu */}
           <div
-            className={`absolute top-28 py-4 ${
-              isArabic ? 'right-0' : 'left-0'
-            } bg-white shadow-lg transition-all duration-300 ease-in-out text-center
-              ${
-                isMobileMenuOpen
-                  ? "opacity-100 translate-x-0"
-                  : isArabic
+            className={`absolute top-28 py-4 ${isArabic ? 'right-0' : 'left-0'
+              } bg-white shadow-lg transition-all duration-300 ease-in-out text-center
+              ${isMobileMenuOpen
+                ? "opacity-100 translate-x-0"
+                : isArabic
                   ? "opacity-0 translate-x-full"
                   : "opacity-0 -translate-x-full"
               }
@@ -113,6 +119,16 @@ export default function HeaderMurshed() {
                 {isArabic ? "تواصل معنا" : "Contact Us"}
                 <Image src="/murshed/contact_us_image.png" alt="" width={30} height={20} className="mt-2" />
               </Link>
+
+            </div>
+            <div className="mt-6">
+              <Link
+                href="https://morshed.marahel.sa/app/login" target="balank"
+                className="mx-2 border border-primary bg-primary text-white py-2.5 px-4 rounded-xl text-xl font-extrabold text-center"
+              >
+                  {isArabic ? "تسجيل الدخول" : "Login"}
+              </Link>
+
             </div>
             <div className="mt-4 flex justify-center items-center">
               <LocaleSwitcher />

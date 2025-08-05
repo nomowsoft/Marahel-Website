@@ -42,3 +42,8 @@ export type WhyMurshed = {
     title:string;
     description:string;
 }
+export type PrivacyPolicy = {
+    id:number;
+    title:string;
+    description:string;
+}

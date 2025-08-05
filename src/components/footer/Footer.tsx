@@ -14,7 +14,7 @@ export default function Footer() {
 
     return (
         <section className={
-                [`/${locale}/morshed`, `/${locale}/morshed/contact_us`].includes(new_path)
+                [`/${locale}/morshed`, `/${locale}/morshed/contact_us`, `/${locale}/morshed/privacy&policy`].includes(new_path)
                 ? 'hidden'
                 : ''
             }
