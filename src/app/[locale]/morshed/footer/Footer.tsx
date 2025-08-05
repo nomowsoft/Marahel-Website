@@ -19,7 +19,7 @@ export default function FooterMurshed() {
                                 {isArabic ? "الرئيسية" : "Home"}
                                 </h1>
                             </Link>
-                            <Link href="/morshed/privacy&policy" className="text-white text-xl font-extrabold">
+                            <Link href={`/${locale}/morshed/privacy&policy`} className="text-white text-xl font-extrabold">
                                 {isArabic ? "الخصوصية والأمان" : "Privacy Policy"}
                             </Link>
                         </div>
