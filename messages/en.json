@@ -124,6 +124,32 @@
       "title1": "where technology meets security!",
       "description1": "Discover Morshed, the leading intelligent chatbot in Saudi Arabia, designed to securely enhance your digital communication. Morshed uses Retrieval Augmented Generation (RAG) technology to deliver accurate and secure responses, enhanced with local security for unparalleled customer service.",
       "description2": "With Morshed, you can rely on advanced technology and local security to provide exceptional customer service."
-    }
+    },
+  "MurshedPrivacyPolicy": {
+    "title": "Privacy Policy",
+    "title1": "Scope of This Policy",
+    "title2": "What Information We Collect",
+    "title3": "How We Use Your Information",
+    "title4": "Data Storage and Security",
+    "title5": "Third-Party Integrations",
+    "title6": "Your Rights",
+    "title7": "International Data Transfers",
+    "title8": "Children’s Data",
+    "title9": "Policy Updates",
+    "title10": "Privacy Policy Updates",
+    "title11": "Contact Us",
+    "description": "This Privacy Policy describes how Marahel Digital Company (\"we\", \"us\", or \"our\") collects, uses, stores, and protects personal information through our digital platforms, including our chatbot service Morshed. We are committed to protecting the privacy and rights of users in accordance with the Saudi Personal Data Protection Law (PDPL) and the requirements set by SDAIA and the National Data Management Office (NDMO).",
+    "description1": "This policy applies to:\n• Users who interact with Morshed, our customer service and advertisement chatbot.\n• Users of our website, digital services, and integrated platforms (e.g., WhatsApp).\n• Both individual and business users, in Saudi Arabia and internationally.",
+    "description2": "We collect only the necessary data required to operate and enhance our services. This includes:\n• Account Information: Name, email address, and phone number.\n• Business Information: Company name, job title, and communication preferences.\n• Communication Logs: General metadata from interactions via WhatsApp (not conversation content).\nWe do not collect:\n• National IDs, health data, or biometric identifiers.\n• Data from children under the age of 13 (or the applicable legal age in your jurisdiction).\n• Sensitive personal data as defined by PDPL.",
+    "description3": "We use the collected information solely for the following purposes:\n• To deliver and improve our chatbot services.\n• To respond to customer inquiries or requests.\n• To conduct service-related communications.\n• To improve the performance and usability of our platforms.\n• To comply with legal obligations under Saudi Arabian law.\nWe do not use your personal data for profiling, automated decision-making, or data monetization.",
+    "description4": "Your data is:\n• Stored securely on cloud servers located within the Kingdom of Saudi Arabia.\n• Protected through administrative, technical, and physical safeguards, including:\n  ◦ Access control\n  ◦ Data encryption\n  ◦ Regular audits\nWe retain your personal information only as long as necessary to fulfill service purposes, comply with legal requirements, or address disputes.",
+    "description5": "We integrate with third-party platforms such as WhatsApp solely to enable communication between you and Morshed.\nWe do not share your personal data with third parties unless:\n• Required by law or government authorities.\n• Necessary for service delivery under strict data confidentiality agreements.\nWe ensure that any third-party services used comply with SDAIA and PDPL guidelines.",
+    "description6": "You have the right to:\n• Access your personal data.\n• Correct any inaccurate information.\n• Request deletion of your personal data.\n• Object to unlawful data processing.\n• Withdraw consent (where applicable).\nTo exercise your rights, please contact us at: support@marahel.com.sa\nWe will respond within the timeframe required under PDPL and applicable regulations.",
+    "description7": "Although we serve international users, we do not transfer personal data outside Saudi Arabia. All processing and storage occur within the KSA, in accordance with SDAIA’s data localization and sovereignty guidelines.",
+    "description8": "Our services are not intended for use by children under the age of 13, or any user under the applicable age of consent in their jurisdiction. We do not knowingly collect personal data from minors. If we discover such data has been collected, we will promptly delete it.",
+    "description9": "We may update this Privacy Policy from time to time to reflect changes in technology, legal obligations, or our practices. When we do, we will revise the “Last Updated” date at the top of this page. We encourage you to review this policy periodically.",
+    "description10": "We may update this Privacy Policy from time to time. The most recent updates will be reflected by the \"Last Updated\" date at the top of this page. If we make material changes to this policy, we will notify you by updating the policy on our platform or sending direct communication, depending on the nature of the changes.\nYou have the right to accept or reject the updated Privacy Policy. If you do not accept any changes, we reserve the right to terminate your account as per our service terms.\nThe Arabic version of this policy is the official version, and in the event of a conflict between this Privacy Policy in other languages, the Arabic text shall prevail.",
+    "description11": "If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, you may contact us at: support@marahel.com.sa"
   }
-  
+
+}  

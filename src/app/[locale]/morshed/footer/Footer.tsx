@@ -13,11 +13,14 @@ export default function FooterMurshed() {
                         <div className="text-center">
                             <h1 className="text-white text-3xl font-extrabold">Morshed</h1>
                         </div>
-                        <div className="text-center mt-10 lg:mt-0">
-                            <Link href="/">
-                                <h1 className="text-white text-3xl font-extrabold">
+                        <div className="text-center mt-10 lg:mt-0 flex justify-between items-center">
+                            <Link href="/" className="mx-4">
+                                <h1 className="text-white text-2xl font-extrabold">
                                 {isArabic ? "الرئيسية" : "Home"}
                                 </h1>
+                            </Link>
+                            <Link href="/morshed/privacy&policy" className="text-white text-xl font-extrabold">
+                                {isArabic ? "الخصوصية والأمان" : "Privacy Policy"}
                             </Link>
                         </div>
                     </div>

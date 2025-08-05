@@ -1,4 +1,4 @@
-import { Values, Works, CustmerPartner, Service, Features, WhyMurshed, Agreements } from "./types";
+import { Values, Works, CustmerPartner, Service, Features, WhyMurshed, Agreements, PrivacyPolicy } from "./types";
 
 export const getValues = (t: (key: string) => string): Values[] => [
     {
@@ -239,3 +239,60 @@ export const getWhyMurshed = (t: (key: string) => string): WhyMurshed[] =>  [
         description: t('description6'),
     },
 ]
+export const getPrivacyPolicy = (t: (key: string) => string): PrivacyPolicy[] =>  [
+  {
+    id: 1,
+    title: t('title1'),
+    description: t('description1')
+  },
+  {
+    id: 2,
+    title: t('title2'),
+    description: t('description2')
+  },
+  {
+    id: 3,
+    title: t('title3'),
+    description: t('description3')
+  },
+  {
+    id: 4,
+    title: t('title4'),
+    description: t('description4')
+  },
+  {
+    id: 5,
+    title: t('title5'),
+    description: t('description5')
+  },
+  {
+    id: 6,
+    title: t('title6'),
+    description: t('description6')
+  },
+  {
+    id: 7,
+    title: t('title7'),
+    description: t('description7')
+  },
+  {
+    id: 8,
+    title: t('title8'),
+    description: t('description8')
+  },
+  {
+    id: 9,
+    title: t('title9'),
+    description: t('description9')
+  },
+  {
+    id: 10,
+    title: t('title10'),
+    description: t('description10')
+  },
+  {
+    id: 11,
+    title: t('title11'),
+    description: t('description11')
+  },
+];

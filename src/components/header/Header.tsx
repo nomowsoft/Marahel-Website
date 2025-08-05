@@ -30,7 +30,7 @@ export default function Header() {
   const isArabic = locale === 'ar';
   return (
     <header className={
-        [`/${locale}/morshed`, `/${locale}/morshed/contact_us`].includes(new_path)
+        [`/${locale}/morshed`, `/${locale}/morshed/contact_us`, `/${locale}/morshed/privacy&policy`].includes(new_path)
         ? 'hidden'
         : ''
       }
