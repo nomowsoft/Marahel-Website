@@ -8,6 +8,7 @@ import Footer from "@/components/footer/Footer";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Whatsapp from "@/components/home/whatsapp";
+import LoadingWrapper from "./loading-wrapper";
 
 type Locale = 'en' | 'ar';
 
@@ -26,11 +27,13 @@ export default async function RootLayout({ children, params }: { children: React
       <body style={{ fontFamily: 'CustomFontName, sans-serif' }}>
         <main>
           <NextIntlClientProvider messages={messages}>
-            <Header />
-              {children}
-              <ToastContainer />
-            <Footer />
-            <Whatsapp />
+            <LoadingWrapper>
+              <Header />
+                {children}
+                <ToastContainer />
+              <Footer />
+              <Whatsapp />
+            </LoadingWrapper>
           </NextIntlClientProvider>
         </main>
       </body>
