@@ -5,8 +5,16 @@ const nextConfig: NextConfig = {
     env: {
         NEXT_PUBLIC_API_URL: "https://support.marahel.sa",
     },
+    // images: {
+    // domains: ["example.com"],
+    // },
     images: {
-        domains: ['localhost'],
+        remotePatterns: [
+            {
+            protocol: "https",
+            hostname: "marahel.com.sa",
+            },
+        ],
     },
 };
  
