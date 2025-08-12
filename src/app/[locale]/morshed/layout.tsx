@@ -16,44 +16,76 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
     ? "مُرشد"
     : "Morshed";
 
-   const description = isArabic
+  const description = isArabic
     ? "مُرشد هو بوت دردشة ذكي مطوّر لفهم اللغة العربية واللهجات المحلية، يوفر تفاعلاً سلساً مع العملاء، ويقدم ردوداً دقيقة بالاعتماد على الذكاء الاصطناعي."
     : "Morshed is a smart chatbot designed to understand Arabic and local dialects, offering seamless customer interactions and accurate AI-powered responses.";
 
-   const keywords = [
-    "مرشد",
-    "بوت دردشة",
-    "مُرشد دردشة ذكية",
-    "مُرشد روبوت محادثة",
-    "مُرشد روبوت دردشة ذكي",
-    "مُرشد مساعد افتراضي",
-    "مُرشد دعم اللهجات المحلية",
-    "مُرشد دردشة عربية",
-    "مُرشد شات بوت عربي",
-    "مُرشد ذكاء اصطناعي للدردشة",
+  const keywords = [
+    "مُرشد",
+    "مُرشد بوت دردشة ذكي",
+    "مُرشد الذكاء الاصطناعي",
+    "مُرشد استضافة محلية",
+    "مُرشد أمان بيانات",
+    "مُرشد دعم العملاء 24/7",
+    "مُرشد تكامل مع CRM",
+    "مُرشد تواصل رقمي",
+    "مُرشد واتساب",
+    "مُرشد تطوير برمجيات سعودية",
+    "مُرشد حلول رقمية",
+    "مُرشد فهم اللهجات العربية",
+    "مُرشد RAG",
+    "مُرشد توليد معزز بالاسترجاع",
+    "مُرشد شركة مراحل الرقمية",
+    "ذكاء اصطناعي سعودي",
+    "بوت دردشة عربي",
+    "دعم العملاء الآلي في السعودية",
     "Morshed",
-    "Morshed Chatbot",
-    "Morshed Smart Chatbot",
     "Morshed AI Chatbot",
-    "Morshed Virtual Assistant",
-    "Morshed Arabic Chatbot",
-    "Morshed Local Dialect Chatbot",
-    "Morshed Arabic Conversation Bot",
-    "Morshed AI Conversation Assistant",
-    "Morshed Intelligent Chatbot"
-  ]
-
+    "Morshed Saudi Arabia",
+    "Morshed Local Hosting",
+    "Morshed Data Security",
+    "Morshed 24/7 Customer Support",
+    "Morshed CRM Integration",
+    "Morshed WhatsApp Chatbot",
+    "Morshed Arabic AI",
+    "Morshed RAG Technology",
+    "Morshed Retrieval Augmented Generation",
+    "Morshed Customizable Chatbot",
+    "Morshed Digital Transformation",
+    "AI Chatbot for Arabic Language",
+    "Arabic Dialect AI Chatbot",
+    "Secure AI Chatbot KSA",
+    "Saudi Digital Solutions",
+    "Custom AI Chatbot Development",
+    "Enterprise Chatbot Saudi",
+    "AI Customer Service Saudi Arabia"
+  ].join(", ");
+  const baseUrl = "https://marahel.com.sa";
+  const pathname = `/${locale}/morshed`;
   return {
-    metadataBase: new URL(`https://marahel.com.sa/${locale}/morshed`),
+    metadataBase: new URL(baseUrl),
     title,
     description,
     keywords,
     alternates: {
-      canonical: `https://marahel.com.sa/${locale}/morshed`,
+      canonical: `${baseUrl}${pathname}`,
       languages: {
-        ar: "https://marahel.com.sa/ar/morshed",
-        en: "https://marahel.com.sa/en/morshed",
+        ar: `${baseUrl}/ar/morshed`,
+        en: `${baseUrl}/en/morshed`,
       },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${baseUrl}${pathname}`,
+      siteName: title,
+      locale: isArabic ? "ar_SA" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }
@@ -62,7 +94,7 @@ export default async function MurshedLayout({ children }: MurshedProps) {
   return (
     <div style={{ fontFamily: 'Somar, sans-serif' }}>
       <Header />
-        {children}
+      {children}
       <Footer />
     </div>
   );
