@@ -28,17 +28,17 @@ export async function generateMetadata(props: { params: Promise<{ locale: string
   const keywords =
     [
       "شركة مراحل الرقمية",
-      "التحول الرقمي",
-      "الذكاء الاصطناعي",
-      "تطوير البرمجيات",
-      "حلول تقنية مبتكرة",
-      "خدمات تقنية متكاملة",
+      "مراحل التحول الرقمي",
+      "مراحل الذكاء الاصطناعي",
+      "مراحل تطوير البرمجيات",
+      "مراحل حلول تقنية مبتكرة",
+      "مراحل خدمات تقنية متكاملة",
       "Marahel Digital",
-      "Digital Transformation",
-      "Artificial Intelligence",
-      "Software Development",
-      "Innovative Tech Solutions",
-      "IT Services"
+      "Marahel Digital Transformation",
+      "Marahel Artificial Intelligence",
+      "Marahel Software Development",
+      "Marahel Innovative Tech Solutions",
+      "Marahel IT Services"
     ]
 
   return {
